@@ -8,9 +8,9 @@
 
 ## Overview
 
-This website is an entertaining quiz game for those who want to test their knowledge about movies, classic and new, by answering questions
+This website is an entertaining quiz game for those who want to have fun testing their general knowledge about classic and new movies, by answering a series of questions and trying to beat their own scores.
 
-The website will be responsive and accessible on all devices with Mobile first implementation on mind. The website will be visually enjoyable and easy to navigate, with all the information the user needs clearly represented. It will be aimed for people who want to have some fun.
+The website will be responsive and accessible on all devices The website will be visually enjoyable and interactive. It will be aimed for people who want to have some fun and learn something new while playing.
 
 ---
 
@@ -19,12 +19,11 @@ The website will be responsive and accessible on all devices with Mobile first i
 1. [UX](#ux)
 
 - [User Stories](#user-stories)
-- [Business Goals](#business-goals)
+- [Game goals](#game-goals)
 - [User Centered Design](#user-centered-design)
   - [Strategy plane](#strategy-plane)
     - [User needs](#user-needs)
     - [Technical capabilities](#technical-capabilities)
-    - [Business vision](#business-vision)
   - [Scope plane](#scope-plane-|-trade-offs)
   - [Structure plane](#structure-plane)
   - [Skeleton plane](#Skeleton-plane)
@@ -67,10 +66,131 @@ The website will be responsive and accessible on all devices with Mobile first i
 ### **User stories**
 
 - As a user I want to:
-    - Gain an understanding of the website's purpose from the landing page.
-    - Find the aesthetics of the website and game enjoyable.
-    - Easily be able to navigate from the landing page to the game with minimal clicks.
-    - Be able to find and understand the rules of the game easily.
-    - See my score as I progress through the game and at the end.
-    - Find the game challenging but not to difficult.
-    - Only see correct answers so I can play again and improve my score.
+
+    - Understand the game easily and have fun playing.
+    - Be able to have the game rules available.
+    - Be able to choose a theme.
+    - Be able to start the quiz by clicking a single button.
+    - Play the game in various devices (mobile, tablet, desktop)
+    - Be able to choose my answer from a multiple choise answer to each question.
+    - See my score as I progress through the game
+    - Know which question I am currently on
+    - Get a feedback with the total score and the option to retake the quiz or choose a new theme.
+
+### **Game goals**
+
+This is a simple "trivia" game to test the general knowledge about movies and some fun facts about the industry. The player needs to choose one answer from the given multiple choice. If the answer is right, the user will get a score added in the score bar. If the answer is incorrect, the user won't be able to change the answer and there won't be any points added.
+
+Once the player has chosen the answer, press Next to continue to the following question. At the end of the game, all the correct answers will be added and the player will get the result.
+
+This quiz has been created for entertaiment purposes.
+
+---
+
+## USER CENTERED DESIGN
+
+### **Strategy Plane**
+
+- #### User needs
+
+There’s something satisfying about being able to recall and guess correctly and test the knowledge and test ourselves. This is why quizzes in general are so popular.
+
+By answering the questions, the user will be able to find entertainment and enjoyment by answering questions about movies and by doing so, learn some facts that they did not know before.
+
+
+- #### Technical capabilities
+
+  - To use this site the user needs to have access to some internet connection within their chosen device.
+
+  - They also need to have basic understanding on how to select and navigate the page.
+
+  - This page can be done with Bootstrap framework to create a structure and implement sections that the user needs. The quiz will be kept separated in 3 different themes but easyly accessible from the homepage.
+
+---
+
+### **Scope plane | Trade-offs**
+
+- **Features within the design plan with highest priority:**
+
+  - Appealing homepage 
+  - Ability to choose a theme
+  - Following [Bootstrap](https://getbootstrap.com/) grid system with the layout of the site being mainly in thirds and halfs (col-6 col-4).
+  - Instructions for the user on how to play the game
+  - Tracker for the questions and score
+  - Final page with the final result
+
+
+- **Lower priority features that may not be included in the initial release of the website:**
+
+  - Responsive navigation bar.
+  - Countdown timer for the questions
+  - Different levels of difficulty.
+  - To give the feedback with the correct answer in the answer is incorrect
+  - Populate questions by using a trivia API.
+---
+### Structure Plane
+
+- The structure of the site will be layed out in four pages.The landing page (homepage) with the themes separated in three clickable images. By clicking on a theme user will be redirected to a page with the respective questions shown as well as an image representing each question.
+
+- Depending on the device, the image representing the question will be on the left side of the question and answers, or on the top of each question. 
+
+- A button representing the link to the next question will be available under each question. There won't be a previous button as the user won't be able to change the score.
+
+- The time and score count will be represented at the bottom of the page (above the footer).
+
+- To ensure the users experience when completing the quiz the end page will show the final score and time required to finish the quiz, as well as two buttons allowing the user to go back to the main page or retake the same quiz.
+
+- The footer will contain all the inportant some information about the creator of the quiz.
+
+---
+
+### Skeleton Plane
+
+- [Mobile Wireframe](docs/wireframes/Mobile.png)
+- [Ipad Wireframe](docs/wireframes/Ipad.png)
+- [Desktop Wireframe](docs/wireframes/Desktop.png)
+
+## DESIGN
+
+The design of the quiz was created to be as simple but pretty as posible, not to distract the customer with too many color schemes and trying to bring the focus to the picture related to the question.
+### **Colors**
+
+The colors used in this project are very simple, to keep a minimalistic and tidy quiz, as well as keeping the color contrasts the highests posible to facilitate the screen readers and make this quiz accessible to all.
+
+The colors chosen are combinations of: pale/light blue and green, white and shades of grey. The color were found using
+[Coolors](https://coolors.co/)
+
+Some of the colors used in this project are: 
+
+>* **(THIS MIGHT CHANGE DURING THE PROJECT!! these are old colors from previous projects!!)**
+
+- #a0e0ca: for button background when hovered.
+- #ffffff: for some section backgrounds.
+- rgba(170, 213, 222, 0.5): for header backgrounds and feedback article background.
+- #e9ecefab: as about us information background
+- #373d3f: as main typography color.
+
+---
+
+### **Typography**
+
+The fonts used for the site were taken from [Google Fonts](https://fonts.google.com/). To make sure the questions are represented on a fun way but easy to read, it was decided to use simple but and consistent fonts previously used in other projects within Code Institute like:
+
+- "Montserrat alternates" 
+- "Quicksand"
+
+---
+### **Imagery**
+
+- The imagery will be very important on the site, as it's a way to give a little hint about the respective question to the user.
+
+- Each theme will have imagery related to it's theme, so the user knows which theme is playing.
+
+- The website will try keep a balance between aesthetic style and fun without overwhelming the user and slowing the loading time of the page.
+
+---
+### **Logo**
+
+- The logo for site was created using an online application called [Canva](https://www.canva.com/) and Paint. It  was designed to represent the film industry and easily recogniseable by users as a movie orientated game.
+
+
