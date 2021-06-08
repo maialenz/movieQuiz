@@ -2,7 +2,7 @@
 
 ## Milestone 2 Project - Interactive User-Centric Frontend Development
 
-### [View live project here](https://maialenz.github.io//)
+### [View live project here](https://maialenz.github.io/movieQuiz/)
 
 ![Image of the mockup of the live website](docs/testing/Mockup.png)
 
@@ -67,11 +67,9 @@ The website will be responsive and accessible on all devices The website will be
 
 - As a user I want to:
 
-    - Understand the game easily and have fun playing.
     - Be able to have the game rules available.
     - Be able to choose a theme.
     - Be able to start the quiz by clicking a single button.
-    - Play the game in various devices (mobile, tablet, desktop)
     - Be able to choose my answer from a multiple choise answer to each question.
     - See my score as I progress through the game
     - Know which question I am currently on
@@ -162,7 +160,7 @@ The colors chosen are combinations of: pale/light blue and green, white and shad
 
 Some of the colors used in this project are: 
 
->* **(THIS MIGHT CHANGE DURING THE PROJECT!! these are old colors from previous projects!!)**
+>* **(THIS will CHANGE DURING THE PROJECT!! these are old colors from previous projects!!)**
 
 - #a0e0ca: for button background when hovered.
 - #ffffff: for some section backgrounds.
@@ -193,4 +191,45 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 - The logo for site was created using an online application called [Canva](https://www.canva.com/) and Paint. It  was designed to represent the film industry and easily recogniseable by users as a movie orientated game.
 
+---
+
+## FEATURES
+
+### Existing Features
+
+- The site will consist of a single page divided on three big sections which will work as three page: based on the user selection, the application will show the respective section. The site will be responsive for most screen sizes. 
+
+- **Header:** 
+
+  - Navbar:
+    - It'll include a link to the main page in the site. The link will increase on size when hovered over it.
+    - Change of color and size on the links when hovered over the buttons
+
+- **Body:** 
+
+  - Home section:
+    - An area to introduce the user to the game
+    - An area with three clickable images, each linking to their respective theme quiz. 
+    - Under each image there will be a 'Start' button to hint the user to click on it to Start the quiz.
+
+  - Quiz section: will be the same in all three themes. There will be 3 to 10 questions on display. Only the question and the imagery will change.
+    - The section will be divided in two. One part will have the picture of the movie related to the question, and another part with the question and a multiple choice answers.
+    - An at the bottom showing the score count (correct answers and incorrect answers).
+  - Feedback section:
+    - An with the score and time summary, as well as a sentence with some feedback to the user.
+    - Two call to action buttons with color changing hover feature allowing the user to return to the main page or to retake the same quiz .
+
+- **Footer:** it will be repeated in all the pages for consistency and good user experience
+  - Contact details: creator's email
+
+---
+
+### Features left to implement
+
+- The posibility of choosing different difficulty: in the first release, there won't be any option to select the difficulty and complexity of the questions, but in a future release there would be three different options for the user to select (easy, medium, hard)
+
+- A countdown timer:
+
+- An API 
+---
 
