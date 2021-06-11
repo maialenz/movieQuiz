@@ -189,7 +189,9 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 ---
 ### **Logo**
 
-- The logo for site was created using an online application called [Canva](https://www.canva.com/) and Paint. It  was designed to represent the film industry and easily recogniseable by users as a movie orientated game.
+- The favicon was created using [Favicon.io](https://favicon.io/favicon-converter/) and the logo used to create it was created using an online application called [Canva](https://www.canva.com/). It represents a clapperboard nodding the film industry and the main subject of the game. The use of the favicon makes it easier to recognize the game tab in between others that the user might have opened.
+
+Paint. It  was designed to represent the film industry and easily recogniseable by users as a movie orientated game.
 
 ---
 
@@ -216,7 +218,7 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
     - The section will be divided in two. One part will have the picture of the movie related to the question, and another part with the question and a multiple choice answers.
     - An at the bottom showing the score count (correct answers and incorrect answers).
   - Feedback section:
-    - An with the score and time summary, as well as a sentence with some feedback to the user.
+    - An with the score summary, as well as a sentence with some feedback to the user.
     - Two call to action buttons with color changing hover feature allowing the user to return to the main page or to retake the same quiz .
 
 - **Footer:** it will be repeated in all the pages for consistency and good user experience
@@ -232,4 +234,15 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 - An API 
 ---
+
+## TECHNOLOGIES USED
+
+### Syntax
+
+- HTML5:
+  - HTML5 is a markup language used for structuring and presenting content on the internet.
+- CSS:
+  - Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML
+- Markdown (for README.md, REFERENCES.md and TESTING.md)
+- JavaScript:
 
