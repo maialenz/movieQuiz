@@ -189,9 +189,10 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 ---
 ### **Logo**
 
-- The favicon was created using [Favicon.io](https://favicon.io/favicon-converter/) and the logo used to create it was created using an online application called [Canva](https://www.canva.com/). It represents a clapperboard nodding the film industry and the main subject of the game. The use of the favicon makes it easier to recognize the game tab in between others that the user might have opened.
+- The favicon was created using [Favicon.io](https://favicon.io/favicon-converter/) and the logo used to create it was created using an online application called [Canva](https://www.canva.com/). It represents a clapperboard nodding the film industry and the main subject of the game. The use of the favicon makes it easier to recognize the game tab in between others that the user might have had already opened.
 
-Paint. It  was designed to represent the film industry and easily recogniseable by users as a movie orientated game.
+- The logo's design represents the film industry and is easily recogniseable by users as a movie orientated game.
+
 
 ---
 
