@@ -12,6 +12,8 @@
 
     <title>The ultimate Movie Trivia</title>
 
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -20,7 +22,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
         integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
 
     <!--favicon-->
 
@@ -37,57 +38,117 @@
     <header>
 
         <div class="container logo justify-content-center">
-            <img src="static/images/trivia_logo.jpg" alt="trivia name and logo">
-            <button class="controls btn btn-dark btn-lg" data-toggle="modal" data-target="#ruleModal">
-                <i class="far fa-question-circle"></i>
-            </button>
+            <div class="row">
+                <div class="col-12">
+                    <img src="static/images/trivia_logo.jpg" alt="trivia name and logo" id='main-logo'>
+                    <button class="btn btn-light hvr-glow btn-lg" data-toggle="modal" data-target="#ruleModal"
+                        id="rule-btn">
+                        <i class="far fa-question-circle"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
 
-            <!--rule modal-->
-            <div id="ruleModal" class="modal fade" tabindex="-1" role="dialog" aria-label="ModalTitle"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+        <!--rule modal-->
+        <div id="ruleModal" class="modal fade" tabindex="-1" role="dialog" aria-label="ModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title text-center" id="modalTitle">Game Rules:</h4>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Choose your favourite theme and click 'PLAY'</li>
+                            <li>The trivia consists of 10 questions</li>
+                            <li>For each question, you'll have 4 answers, but only one is correct. Choose wisely!
+                            </li>
+                            <li>The correct answer will turn green, so you can check if you were right or not!</li>
+                            <li>If your asnwer is correct, you will be awarded with 10 points</li>
+                            <li>Once you have chosen your answer, click on <strong>Next</strong> to jump to the next
+                            </li>
+                            question
+                            <li>If you want to restart the game, the Restart Quiz button will bring you to the main
+                                page
+                                where you'll be able to choose the same or a different theme</li>
+                            <li>
+                                <biggest><strong>GOOD LUCK!</strong></biggest>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn controls btn-light hvr-glow" id="closeModal"
+                            data-dismiss="modal">
+                            I understand!
                         </button>
-                        <h4 class="modal-title text-center" id="modalTitle">Game Rules:</h4>
-                        <div class="modal-body">
-                            <ul>
-                                <li>Choose your favourite theme and click 'PLAY'</li>
-                                <li>The trivia consists of 10 questions</li>
-                                <li>For each question, you'll have 4 answers, but only one is correct. Choose wisely!
-                                </li>
-                                <li>The correct answer will turn green, so you can check if you were right or not!</li>
-                                <li>If your asnwer is correct, you will be awarded with 10 points</li>
-                                <li>Once you have chosen your answer, click on <strong>Next</strong> to jump to the next
-                                </li>
-                                question
-                                <li>If you want to restart the game, the Restart Quiz button will bring you to the main
-                                    page
-                                    where you'll be able to choose the same or a different theme</li>
-                                <li class="center"><strong>GOOD LUCK!</strong></li>
-                            </ul>
-                        </div>
-                        <div class="modal-footer justify-content-center">
-                            <button type="button" class="btn controls btn-light hvr-glow" id="closeModal"
-                                data-dismiss="modal">
-                                I understand!
-                            </button>
-                        </div>
-
                     </div>
                 </div>
-
             </div>
-
+        </div>
         </div>
 
     </header>
 
 
     <!--landing section-->
-    <section>
+    <section class="homepage border" id="theme">
 
+        <!--section heading-->
+        <h1 class="homepage-header text-center">WELCOME TO THE ULTIMATE MOVIE TRIVIA</h1>
+        <h3 class="homepage-content text-center">
+            Please select a theme and press 'START' when you are ready to start
+        </h3>
+
+        <!--theme cards-->
+        <div class="container justify-content-center">
+            <div class="row" id="themeRow">
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
+                    <div class="card theme-one h-100">
+                        <img class="card-img-top" src="static/images/tuyen-vo-tS-HPsquare-unsplash.jpg"
+                            alt="image of Hogwarts letter with wand">
+                        <div class="card-body">
+                            <h4 class="card-header text-center">Harry Potter</h4>
+                            <p class="card-text">How much do you know about Harry Potter? Ready to test your knowledge?</p>
+                            <button class="btn btn-light hvr-glow start-button w-100" onclick="startHp()"
+                                type="button" aria-label="start game">
+                                START
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
+                    <div class="card theme-one h-100">
+                        <img class="card-img-top" src="static/images/erik-mclean-marvelsquare-unsplash.jpg"
+                            alt="marvel comic book images">
+                        <div class="card-body">
+                            <h4 class="card-header text-center">Marvel Universe</h4>
+                            <p class="card-text">How well do you know the Marvel Universe? Test it taking the quiz!</p>
+                            <button class="btn btn-light hvr-glow start-button w-100" onclick="startMarvel()"
+                                type="button" aria-label="start game">
+                                START
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
+                    <div class="card theme-one h-100 ">
+                        <img class="card-img-top" src="static/images/andrew-wulf-starwarssquare-unsplash.jpg"
+                            alt="stormtroopers standing in formation">
+                        <div class="card-body">
+                            <h4 class="card-header text-center">Star Wars</h4>
+                            <p class="card-text">You are one with the force and the force is with you. Or is it?</p>
+                            <button class="btn btn-light hvr-glow start-button w-100" onclick="startSw()"
+                                type="button" aria-label="start game">
+                                START
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!--quiz section-->
