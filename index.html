@@ -156,18 +156,32 @@
     <!--quiz section-->
     <div id="game-section" class="hidden">
         <div class="container justify-content-center" id="question-container">
-            <div class="row" id="question">
-
-                <div class="controls">
-                    <div class="col-sm-12 col-md-6">
-
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-
-                    </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img id="question-image" src="" alt="">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div id="question"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <button class="btn btn-light hvr-glow btn-answer" data-number="1"></button>
+                </div>
+                <div class="col-12 col-md-6">
+                    <button class="btn btn-light hvr-glow btn-answer" data-number="2"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <button class="btn btn-light hvr-glow btn-answer" data-number="3"></button>
+                </div>
+                <div class="col-12 col-md-6">
+                    <button class="btn btn-light hvr-glow btn-answer" data-number="4"></button>
                 </div>
             </div>
         </div>
+
 
         <div class="container tracking-container">
             <div class="row">
@@ -185,6 +199,21 @@
                 </div>
             </div>
         </div>
+
+        <div class="container">
+            <div class="row text-center" id="restart">
+                <div class="col-6">
+                    <button id="restart-theme-btn" class="btn btn-light hvr-glow controls">
+                        Restart this Theme
+                    </button>  
+                </div>
+                <div class="col-6">
+                    <button id="start-again-btn" class="btn btn-light hvr-glow controls">   
+                        Back to the Main page
+                    </button> 
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--feedback section-->
@@ -195,7 +224,7 @@
     <!--static footer-->
     <footer>
         <div class="text-center">
-            <h6><small>Maialen Zumeta - 2021</small></h6>
+            <h6><small>Maialen Zumeta - 2021 - Code Institute</small></h6>
         </div>
     </footer>
 
