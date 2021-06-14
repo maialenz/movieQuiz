@@ -1,0 +1,62 @@
+{
+    "harryPotter": [
+    {
+        "image_url":"",
+        "question": "What is the name of Harry Potter's owl?",
+        "answers": ["Scabbers", "Snowy", "Hedwig", "Errol"],
+        "correctAnswer" : "Hedwig"
+    },
+    {
+        "image_url":"",
+        "question": "What creature is Aragog?",
+        "answers": ["Gigant House Spider", "Black Widow", "Tarantula", "Acromantula"],
+        "correctAnswer": "Acromantula"
+    },
+    {
+        "image_url":"",
+        "question": "Who killed Dobby by throwing a knife at him?",
+        "answers": ["Bellatrix Lestrange", "Alastor Moody", "Lucius Malfoy", "Voldemort"],
+        "correctAnswer": "Bellatrix Lestrange"
+    }
+],
+
+"marvelQuestions" : [
+    {
+        "image_url":"",
+        "question": "What is the real name of the Scarlet Witch?",
+        "answers": ["Carol Danvers", "Wanda Maximoff", "Natasha Romanoff", "Jessica Jones"],
+        "correctAnswer": "Wanda Maximoff"
+    },
+    {
+        "image_url":"",
+        "question": "Which European city do Hawkeye and Black Widow often reminisce about?",
+        "answers": ["Paris", "Berlin", "Sokovia", "Budapest"],
+        "correctAnswer": "Budapest"
+    },
+    {
+        "image_url":"",
+        "question": "Complete the quote: 'That's my secret, Cap. I'm always...'",
+        "answers": ["green", "mad", "angry", "ready"],
+        "correctAnswer": "angry"
+    }
+],
+"starwarsQuestions" : [
+    {
+        "image_url":"",
+        "question": "Who are the only two characters who appear in every Star Wars movie?",
+        "answers": ["Darth Vader and Luke","Han Solo and Chewbacca","Obi-Wan and Leia","C-3PO and R2-D2"],
+        "correctAnswer": "C-3PO and R2-D2"
+    },
+    {
+        "image_url":"",
+        "question": "Who played Mace Windu?",
+        "answers": ["Samuel L. Jackson","Liam Neeson", "Mark Hamill", "Hayden Cristensen"],
+        "correctAnswer": "a"
+    },
+    {
+        "image_url":"",
+        "question": "Who built C-3PO?",
+        "answers": ["Kylo Ren","Anakin Skywalker","Obi-Wan Kenobi","Lando Calrissian"],
+        "correctAnswer": "Anakin Skywalker"
+    }
+]}
