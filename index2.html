@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The ultimate Movie Trivia! Test you film knowledge and see if you get all of them right!" />
+    <meta name="keywords" content="trivia, quiz, game, fun" />
+    <meta name="author" content="Maialen Zumeta" />
+
+    <title>The ultimate Movie Trivia</title>
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" />
+
+    <!--favicon-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+
+</head>
+
+<body>
+
+    <!--main logo-->
+    <div class="container-fluid logo justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <img src="static/images/trivia_logo.jpg" alt="trivia name and logo" id='main-logo'>
+            </div>
+        </div>
+    </div>
+
+    <!--hero image-->
+
+
+    <!--homepage section-->
+
+    <div id="homepage" class="border">
+
+        <div class="background-home container-fluid text-center my-2">
+            <img src="static/images/jon-tyson-clapperboard-short_tiny.jpg" alt="image of hand holding a clapperboard">
+        </div>
+
+        <div class="container-fluid head-container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="homepage-header">WELCOME TO THE ULTIMATE MOVIE TRIVIA</h1>
+                </div>
+                <div class="col-12 text-center">
+                    <h3 class="homepage-content text-center">
+                        Are you ready to put your knowledge to test?
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid controls-container my-3">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 my-2">
+                    <button class="btn btn-light hvr-glow w-100 controls" data-toggle="modal" data-target="#ruleModal">
+                        How to Play
+                    </button>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 my-2">
+                    <div class="dropdown">
+                        <button id="drop" class="btn btn-light hvr-glow w-100 dropbtn controls">Choose
+                            Level</button>
+                        <div id="levelChoice" class="dropdown-content">
+                            <a class="difficulty-option" data-value="easy">Easy Peasy!</a>
+                            <a class="difficulty-option" data-value="medium">Medium</a>
+                            <a class="difficulty-option" data-value="hard">Extreme!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 my-2">
+                    <button id="drop" class="btn btn-light hvr-glow w-100 controls" id="start-button">Let's
+                        Go!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Rule Modal-->
+
+    <div id="ruleModal" class="modal fade" tabindex="-1" role="dialog" aria-label="ModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title text-center" id="modalTitle">Game Rules:</h4>
+                <div class="modal-body">
+                    <ul>
+                        <li>Choose your favourite theme and click 'PLAY'</li>
+                        <li>The trivia consists of 10 questions</li>
+                        <li>For each question, you'll have 4 answers, but only one is correct. Choose wisely!
+                        </li>
+                        <li>The correct answer will turn green, so you can check if you were right or not!</li>
+                        <li>If your asnwer is correct, you will be awarded with 10 points</li>
+                        <li>Once you have chosen your answer, click on <strong>Next</strong> to jump to the next
+                        </li>
+                        question
+                        <li>If you want to restart the game, the Restart Quiz button will bring you to the main
+                            page
+                            where you'll be able to choose the same or a different theme</li>
+                        <li>
+                            <biggest><strong>GOOD LUCK!</strong></biggest>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn controls btn-light hvr-glow" id="closeModal" data-dismiss="modal">
+                        I understand!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+
+    <footer>
+        <p class="text-center">Maialen Zumeta - 2021 - Code Institute</p>
+    </footer>
+
+    <!--scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
