@@ -75,12 +75,12 @@
                 </div>
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 my-2">
                     <div class="dropdown">
-                        <button id="drop" class="btn btn-light hvr-glow w-100 dropbtn controls">Choose
+                        <button id="drop" class="btn btn-light hvr-glow w-100 dropbutton controls">Choose
                             Level</button>
-                        <div id="levelChoice" class="dropdown-content">
-                            <a class="difficulty-option" data-value="easy">Easy Peasy!</a>
-                            <a class="difficulty-option" data-value="medium">Medium</a>
-                            <a class="difficulty-option" data-value="hard">Extreme!</a>
+                        <div id="levelChoice" class="dropdown-content text-center justify-content-center">
+                            <a class="difficulty-option hvr-glow" data-value="easy">Easy Peasy!</a>
+                            <a class="difficulty-option hvr-glow" data-value="medium">Medium</a>
+                            <a class="difficulty-option hvr-glow" data-value="hard">Extreme!</a>
                         </div>
                     </div>
                 </div>
@@ -124,6 +124,66 @@
                     <button type="button" class="btn controls btn-light hvr-glow" id="closeModal" data-dismiss="modal">
                         I understand!
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--game section-->
+    
+    <div id="gamepage" class="hidden">
+        <div class="container">
+            <div class="row text-center" id="restart">
+                <div class="col-6">
+                    <button id="restart-level-button" class="controls btn">
+                        Restart Level
+                    </button>
+                </div>
+            </div>
+            <div class="col-6">
+                <button id="restart-game-button" class="controls btn">
+                    Back to Homepage
+                </button>
+            </div>
+        </div>
+        
+        <div class="container questions-container" id="questions-box">
+            <div class="row">
+                <div class="col-12">
+                    <div id="question"></div>
+                    <div id="answer-buttons" class="button-selection"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <button class="answer-button hvr-glow" data-number="1"></button>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <button class="answer-button hvr-glow" data-number="2"></button>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <button class="answer-button hvr-glow" data-number="3"></button>    
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <button class="answer-button hvr-glow" data-number="4"></button>    
+                </div>
+            </div>
+        </div>
+
+        <div class="container score-container">
+            <div class="row">
+                <div class="col-6" id="questions-track">
+                    <p id="q-text">
+                        <i class="far fa-question-circle"></i>
+                        <span id="q-count">1/10</span>
+                    </p>
+                </div>
+                <div class="col-6" id="score-track">
+                    <p id="s-text">
+                        <span id="score">0</span><i class="fas fa-bolt"></i>
+                    </p>
                 </div>
             </div>
         </div>
