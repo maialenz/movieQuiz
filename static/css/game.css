@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap");
 
+.wrapper {
+    background-color: rgba(173, 169, 183, 0.7);
+    margin: 2srem 1.5rem;
+    padding: 1rem 0;
+    border: 0.1rem solid darkgrey;
+    border-radius: 0.3125rem;
+}
+
+div #score-track#s-text#score, div #questions-track#q-text#q-count {
+    padding: 0 0;
+    margin: 0;
+}
+
+h2#question {
+    margin-bottom: 1rem;
+}
+
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -7,17 +24,18 @@
     font-size: 1rem;
     border: 00.1rem solid rgba(87, 15, 55, 0.2);
     border-radius: 0.3125rem;
-    background-color : #fff
+    background-color: #fff
 }
 
 .choice-container:hover {
-    background-color: rgba(87, 15, 55, 0.6)!important;
-    color:#fff!important;
+    background-color: rgba(87, 15, 55, 0.6) !important;
+    color: #fff !important;
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0;
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
+
 .choice-prefix {
     margin: 0;
     padding: 1rem 2rem;
@@ -30,3 +48,15 @@
     padding: 1rem;
     margin: 0;
 }
+
+#restart {
+    margin: 1rem;
+}
+
+button#restart-level-button, button#restart-game-button {
+    background-color: rgba(87, 15, 55, 0.4);
+    font-weight: 400;
+    margin: 0 0.3rem;
+    position: center;
+}
+
