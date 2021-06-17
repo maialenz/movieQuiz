@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap");
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    border: 00.1rem solid rgba(87, 15, 55, 0.2);
+    border-radius: 0.3125rem;
+    background-color : #fff
+}
+
+.choice-container:hover {
+    background-color: rgba(87, 15, 55, 0.6)!important;
+    color:#fff!important;
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+.choice-prefix {
+    margin: 0;
+    padding: 1rem 2rem;
+    background: rgba(87, 15, 55, 0.8);
+    border-radius: 0.3125rem;
+    color: #fff;
+}
+
+.choice-text {
+    padding: 1rem;
+    margin: 0;
+}
