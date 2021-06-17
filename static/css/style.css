@@ -16,11 +16,22 @@ h1 {
 h3 {
   font-family: 'Montserrat', sans-serif !important;
   font-size: 15px !important;
-  font-weight: 300px !important;
+  font-weight: 300 !important;
   margin-bottom: 25px !important;
   text-align: center !important;
 }
 
+h4 {
+  font-family: "Montserrat Alternates", sans-serif !important;
+  font-size: 17px !important;
+  font-weight: 500 !important;
+}
+
+.card-text {
+  font-family: "Montserrat Alternates", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 400;
+}
 /*---------------Logo----------------*/
 
 #main-logo {
@@ -30,16 +41,7 @@ h3 {
   width: 50%;
 }
 
-#rule-btn {
-  position: absolute;
-  top: 1;
-  right: 0;
-  margin-top: 10px;
-  margin-right: 5px;
-  border: 0.5px solid darkgray;
-  font-size: 30px;
-  color: #808080;
-}
+
 
 /*----------Home page section --------*/
 
@@ -48,7 +50,7 @@ h3 {
   border: 1px solid darkgrey !important;
   margin: 20px 30px 30px 30px !important;
   padding: 30px !important;
-  background-color: rgba(116, 190, 181, 0.75);
+  background-color: rgba(173, 169, 183, 0.7);
 
 }
 
@@ -56,7 +58,6 @@ h3 {
   opacity: 0.85;
   height: 60%;
   overflow: hidden;
-
 }
 
 .img {
@@ -68,24 +69,49 @@ h3 {
   background-size: cover;
 }
 
+.btn {
+  border: 0.1rem solid lightgray!important;
+}
+.btn:hover{
+  background-color: rgba(87, 15, 55, 0.6)!important;
+  color:#fff!important;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
 .card-img-top {
   width: 100%;
   padding: 10px;
 }
 
 button.start-button {
-  border: 0.5px dotted lightgray;
+  border: 0.5px dotted darkgray;
 }
 
+.controls-container {
+  background-color: rgba(87, 15, 55, 0.5);
+}
+.dropdown-toggle {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+.dropdown-toggle a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
 /*------------Media Queries--------------*/
 
 /*--- media querie for responsiveness of logo on small screens---*/
 @media screen and (min-width: 450px) {
-  #rule-btn {
-    font-size: 20px;
-    margin-top: 5px;
-    margin-right: 5px;
-  }
+
 
   /*
   h1 {
