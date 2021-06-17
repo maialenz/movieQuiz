@@ -13,6 +13,7 @@
     <title>The ultimate Movie Trivia</title>
 
     <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/game.css" type="text/css" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         type="text/css" />
@@ -66,7 +67,7 @@
                 </div>
             </div>
         </div>
-       <!-- <div class="background-home container-fluid text-center my-2">
+        <!-- <div class="background-home container-fluid text-center my-2">
             <img src="static/images/jon-tyson-clapperboard-short_tiny.jpg" alt="image of hand holding a clapperboard">
         </div>-->
         <div class="container justify-content-center">
@@ -77,8 +78,12 @@
                             alt="image of Hogwarts letter with wand">
                         <div class="card-body">
                             <h4 class="card-header text-center">Harry Potter</h4>
-                            <p class="card-text">How much do you know about Harry Potter? Ready to test your knowledge?</p>
-                           
+                            <p class="card-text">How much do you know about Harry Potter? Ready to test your knowledge?
+                            </p>
+                            <a href="/game.html" class="btn btn-light hvr-glow start-button w-100" onclick="startHp()"
+                                type="button" aria-label="start game">
+                                START
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +95,10 @@
                         <div class="card-body">
                             <h4 class="card-header text-center">Marvel Universe</h4>
                             <p class="card-text">How well do you know the Marvel Universe? Test it taking the quiz!</p>
-                           
+                            <a href="/game.html" class="btn btn-light hvr-glow start-button w-100"
+                                onclick="startMarvel()" type="button" aria-label="start game">
+                                START
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -102,22 +110,27 @@
                         <div class="card-body">
                             <h4 class="card-header text-center">Star Wars</h4>
                             <p class="card-text">You are one with the force and the force is with you. Or is it?</p>
-                          
+                            <a href="/game.html" class="btn btn-light hvr-glow start-button w-100" onclick="startSw()"
+                                type="button" aria-label="start game">
+                                START
+                            </a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-       
+
 
         <div class="container-fluid border controls-container my-3">
             <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 my-2">
-                    <button class="btn btn-light hvr-glow w-100 controls" data-toggle="modal" data-target="#ruleModal">
-                        How to Play
+                <div class="col-12 w-100">
+                    <button class="btn btn-light hvr-glow w-100 controls mt-3 mb-3" data-toggle="modal"
+                        data-target="#ruleModal">
+                        <i class="far fa-question-circle"></i> How to Play <i class="far fa-question-circle"></i>
                     </button>
                 </div>
+                <!--
                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 my-2">
                     <div class="dropdown">
                         <button id="drop" class="btn btn-light hvr-glow w-100 dropbutton controls">Choose
@@ -133,12 +146,10 @@
                     <button id="drop" class="btn btn-light hvr-glow w-100 controls" id="start-button">Let's
                         Go!</button>
                 </div>
+                -->
             </div>
         </div>
     </div>
-
-
-    <!--game Page-->
 
     <!--Modals-->
 
@@ -150,7 +161,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title text-center" id="modalTitle">Game Rules:</h4>
+                <h4 class="modal-title text-center" id="modalTitle"><strong>Game Rules:</strong></h4>
                 <div class="modal-body">
                     <ul>
                         <li>Choose your favourite theme and click 'PLAY'</li>
@@ -200,77 +211,15 @@
         </div>
     </div>
 
-    <!--game section-->
-
-    <div id="gamepage" class="hidden">
-        <div class="container">
-            <div class="row text-center" id="restart">
-                <div class="col-6">
-                    <button id="restart-level-button" class="controls btn">
-                        Restart Level
-                    </button>
-                </div>
-            </div>
-            <div class="col-6">
-                <button id="restart-game-button" class="controls btn">
-                    Back to Homepage
-                </button>
-            </div>
-        </div>
-
-        <div class="container questions-container" id="questions-box">
-            <div class="row">
-                <div class="col-12">
-                    <div id="question"></div>
-                    <div id="answer-buttons" class="button-selection"></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <button class="answer-button hvr-glow" data-number="1"></button>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <button class="answer-button hvr-glow" data-number="2"></button>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <button class="answer-button hvr-glow" data-number="3"></button>
-                </div>
-                <div class="col-12 col-md-6 col-lg-6">
-                    <button class="answer-button hvr-glow" data-number="4"></button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container score-container">
-            <div class="row">
-                <div class="col-6" id="questions-track">
-                    <p id="q-text">
-                        <i class="far fa-question-circle"></i>
-                        <span id="q-count">1/10</span>
-                    </p>
-                </div>
-                <div class="col-6" id="score-track">
-                    <p id="s-text">
-                        <span id="score">0</span><i class="fas fa-bolt"></i>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--footer-->
-
-    <footer>
-        <p class="text-center">Maialen Zumeta - 2021 - Code Institute</p>
-    </footer>
+    <!--find game Page section in game.html-->
 
     <!--scripts-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="assets/js/game.js"></script>
+    <script src="static/js/questions.js"></script>
+    <script src="static/js/game.js" type="module"></script>
+
 
 </body>
 
