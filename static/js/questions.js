@@ -1,4 +1,4 @@
-const triviaquestions = { 
+let triviaQuestions = [ {
     hpQuestions : [ 
             {
                 question: "What is the name of Harry Potter's owl?",
@@ -80,7 +80,8 @@ const triviaquestions = {
                 correctAnswer: 1
             }
         ],
-
+    },
+    {
         marvelQuestions: [
             {
                 question: "What is the real name of the Scarlet Witch?",
@@ -162,11 +163,10 @@ const triviaquestions = {
                 choice4: "Morgan",
                 correctAnswer: 1
             }
-        ],
-
+        ] },
+        {
         starwarsQuestions: [ 
         {
-            image_url: "",
             question: "Who are the only two characters who appear in every Star Wars movie?",
             choice1: "Darth Vader and Luke",
             choice2: "Han Solo and Chewbacca",
@@ -246,8 +246,5 @@ const triviaquestions = {
             choice4: "Shot by Stormtrooper",
             correctAnswer: 1
         }
-        ]
-};
-
-// Changes:
-//made an array to store all questions in 1 variable 
+    ] }
+];

@@ -8,28 +8,28 @@ body {
 
 h1 {
   font-family: 'Quicksand', sans-serif !important;
-  font-size: 30px !important;
+  font-size: 1.8rem !important;
   font-weight: 500 !important;
-  margin: 0px 0px 15px 0px !important;
+  margin: 0 0 0.9rem 0 !important;
 }
 
-h3 {
+h3.homepage-content {
   font-family: 'Montserrat', sans-serif !important;
-  font-size: 15px !important;
+  font-size: 1.5rem !important;
   font-weight: 300 !important;
-  margin-bottom: 25px !important;
+  margin-bottom: 1.5rem !important;
   text-align: center !important;
 }
 
 h4 {
   font-family: "Montserrat Alternates", sans-serif !important;
-  font-size: 17px !important;
+  font-size: 1.06rem !important;
   font-weight: 500 !important;
 }
 
 .card-text {
   font-family: "Montserrat Alternates", sans-serif !important;
-  font-size: 15px !important;
+  font-size: 1rem !important;
   font-weight: 400;
 }
 /*---------------Logo----------------*/
@@ -40,6 +40,7 @@ h4 {
   margin-right: auto;
   width: 50%;
 }
+
 
 
 
@@ -69,10 +70,11 @@ h4 {
   background-size: cover;
 }
 
-.btn {
+.btn, a.btn {
   border: 0.1rem solid lightgray!important;
 }
-.btn:hover{
+
+.btn:hover, a.btn:hover {
   background-color: rgba(87, 15, 55, 0.6)!important;
   color:#fff!important;
   cursor: pointer;
@@ -92,35 +94,24 @@ button.start-button {
 
 .controls-container {
   background-color: rgba(87, 15, 55, 0.5);
+  margin: 0 3rem;
 }
-.dropdown-toggle {
-  display: none;
-  width: 100%;
-  z-index: 1;
-}
-.dropdown-toggle a {
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
+
 /*------------Media Queries--------------*/
 
 /*--- media querie for responsiveness of logo on small screens---*/
 @media screen and (min-width: 450px) {
 
-
-  /*
-  h1 {
-    font-size: 25px !important;
-  }*/
 }
 
 @media screen and (max-width: 641px) {
   #main-logo {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #main-logo {
+    width: 50%;
   }
 }

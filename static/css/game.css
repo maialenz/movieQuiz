@@ -2,13 +2,14 @@
 
 .wrapper {
     background-color: rgba(173, 169, 183, 0.7);
-    margin: 2srem 1.5rem;
+    margin: 1.5rem 1.75rem;
     padding: 1rem 0;
     border: 0.1rem solid darkgrey;
     border-radius: 0.3125rem;
 }
 
-div #score-track#s-text#score, div #questions-track#q-text#q-count {
+div #score-track#s-text#score,
+div #questions-track#q-text#q-count {
     padding: 0 0;
     margin: 0;
 }
@@ -28,8 +29,6 @@ h2#question {
 }
 
 .choice-container:hover {
-    background-color: rgba(87, 15, 55, 0.6) !important;
-    color: #fff !important;
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0;
     transform: translateY(-0.1rem);
@@ -47,16 +46,23 @@ h2#question {
 .choice-text {
     padding: 1rem;
     margin: 0;
+    width: 100%;
+    text-align: left;
 }
 
-#restart {
-    margin: 1rem;
-}
 
-button#restart-level-button, button#restart-game-button {
+button#restart-level-button,
+button#restart-game-button {
     background-color: rgba(87, 15, 55, 0.4);
     font-weight: 400;
     margin: 0 0.3rem;
     position: center;
 }
 
+.correct {
+    background-color: rgb(181, 228, 140) !important;
+}
+
+.incorrect {
+    background-color: rgb(229, 56, 59) !important;
+}

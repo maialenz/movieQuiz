@@ -2,13 +2,13 @@ const questions = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-let triviaQuestions = [ {
-    hpQuestions : [ 
-            {
+
+let triviaQuestions = [ 
+             {
                 question: "What is the name of Harry Potter's owl?",
                 choice1: "Scabbers",
                 choice2: "Snowy",
@@ -86,11 +86,7 @@ let triviaQuestions = [ {
                 choice3: "May 17th",
                 choice4: "August 3rd",
                 correctAnswer: 1
-            }
-        ],
-    },
-    {
-        marvelQuestions: [
+            },
             {
                 question: "What is the real name of the Scarlet Witch?",
                 choice1: "Carol Danvers",
@@ -170,11 +166,8 @@ let triviaQuestions = [ {
                 choice3: "Gogan",
                 choice4: "Morgan",
                 correctAnswer: 1
-            }
-        ] },
-        {
-        starwarsQuestions: [ 
-        {
+            },
+            {
             question: "Who are the only two characters who appear in every Star Wars movie?",
             choice1: "Darth Vader and Luke",
             choice2: "Han Solo and Chewbacca",
@@ -254,26 +247,73 @@ let triviaQuestions = [ {
             choice4: "Shot by Stormtrooper",
             correctAnswer: 1
         }
-    ] }
-];
+    ];
 
-// Constants
+// Constants for the game
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 3;
 
-startGame = () => {
+
+startQuiz = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [...triviaQuestions];
-    console.log(availableQuestions);
+    getNewQuestion();
 };
 
-startGame();
+getNewQuestion = () => {
+
+    //if the user answers all questions available --> bring them to the score page
+    if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        //go to the end page
+        return window.location.assign("/end.html")
+    }
+
+   questionCounter++;
+   const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+   currentQuestion = availableQuestions[questionIndex];
+   question.innerText = currentQuestion.question;
+   
+   choices.forEach (choice => {
+       const number = choice.dataset['number'];
+       choice.innerText = currentQuestion['choice' + number];
+   });
+
+   //remove used question from array not to reuse it
+   availableQuestions.splice(questionIndex, 1);
+   acceptingAnswers = true;
+};
+
+choices.forEach(choice => {
+    choice.addEventListener('click', e => {
+        if(!acceptingAnswers) return;
+
+        //create delay before they can answer
+        acceptingAnswers = false;
+        const selectedChoice = e.target;
+        const selectedAnswer = selectedChoice.dataset['number'];
+
+        const classToApply = 'incorret';
+            selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        
+        selectedChoice.parentElement.classList.add(classToApply);
+
+        setTimeout (() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+
+        }, 1000); 
+
+    });
+});
+
+
+startQuiz();
 
 
 
-/** 
 
+/*
 onclick --> hp, get hp questions
 onclick --> marvel, get marvel questions
 onclick --> get starwars questions
