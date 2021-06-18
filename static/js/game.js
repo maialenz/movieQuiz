@@ -1,5 +1,7 @@
 const questions = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
+const questionCounterText = document.getElementById('questionCounter');
+const scoreText = document.getElementById('score');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -37,7 +39,7 @@ let triviaQuestions = [{
         choice2: "Fang",
         choice3: "Max",
         choice4: "Charlie",
-        answer : 2
+        answer: 2
     },
     {
         question: "What was Harry’s Patronus?",
@@ -45,7 +47,7 @@ let triviaQuestions = [{
         choice2: "An Otter",
         choice3: "A cat",
         choice4: "A stag",
-        answer : 4
+        answer: 4
     },
     {
         question: "What was Neville's favorite subject at Hogwarts?",
@@ -269,7 +271,10 @@ getNewQuestion = () => {
         return window.location.assign("/end.html")
     }
 
+    //update the score dinamically as user answers questions
     questionCounter++;
+    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerText = currentQuestion.question;
@@ -294,11 +299,16 @@ choices.forEach(choice => {
         const selectedChoice = e.target;
         const selectedAnswer = selectedChoice.dataset['number'];
 
-        const classToApply = 
+        const classToApply =
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
+        //increment score only if user answers question correctly
+        if(classToApply === 'correct') {
+            incrementScore(CORRECT_BONUS);
+        }
+
         selectedChoice.parentElement.classList.add(classToApply);
-        
+
         //Continue to the next question after a second, so the user can see if the answer was correct
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
@@ -309,14 +319,10 @@ choices.forEach(choice => {
     });
 });
 
+//increment score counter
+incrementScore = num => {
+    score += num;
+    scoreText.innerText = score;
+}
 
 startQuiz();
-
-
-
-
-/*
-onclick --> hp, get hp questions
-onclick --> marvel, get marvel questions
-onclick --> get starwars questions
-*/
