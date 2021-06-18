@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap");
 
+.logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
 .wrapper {
     background-color: rgba(173, 169, 183, 0.7);
     margin: 1.5rem 1.75rem;
@@ -65,4 +71,23 @@ button#restart-game-button {
 
 .incorrect {
     background-color: rgb(229, 56, 59) !important;
+}
+
+/*----------------HUD-----------------*/
+
+#hud {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.hud-main-text {
+    text-align: center;
 }
