@@ -70,9 +70,9 @@
         <!-- <div class="background-home container-fluid text-center my-2">
             <img src="static/images/jon-tyson-clapperboard-short_tiny.jpg" alt="image of hand holding a clapperboard">
         </div>-->
-        <div class="container justify-content-center">
+        <div class="container-fluid justify-content-center">
             <div class="row" id="themeRow">
-                <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
+                <div class="d-sm-none d-md-block col-lg-4 mb-2">
                     <div class="card theme-one h-100">
                         <img class="card-img-top" src="static/images/tuyen-vo-tS-HPsquare-unsplash.jpg"
                             alt="image of Hogwarts letter with wand">
@@ -88,7 +88,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-4 col-lg-4 mb-2">
+                <div class="d-sm-none d-md-block col-lg-4 mb-2">
                     <div class="card theme-one h-100">
                         <img class="card-img-top" src="static/images/erik-mclean-marvelsquare-unsplash.jpg"
                             alt="marvel comic book images">
@@ -129,6 +129,10 @@
                         <i class="far fa-arrow-alt-circle-right"></i> <i class="far fa-arrow-alt-circle-right"></i>
                         <strong>START THE QUIZ HERE!</strong>  
                         <i class="far fa-arrow-alt-circle-left"></i> <i class="far fa-arrow-alt-circle-left"></i>
+                    </a>
+                    <a class="btn btn-light hvr-glow controls w-100">
+                        <i class="far fa-star"></i><i class="far fa-star"></i>  
+                        High Scores <i class="far fa-star"></i><i class="far fa-star"></i>
                     </a>
                     <button class="btn btn-light hvr-glow w-100 controls mt-2 mb-3" data-toggle="modal"
                         data-target="#ruleModal">
@@ -222,8 +226,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="static/js/questions.js" type="module"></script>
     <script src="static/js/game.js"></script>
+    <script src="static/js/questions.js" type="module"></script>
+    <script src="static/js/end.js"></script>
+  
 
 
 

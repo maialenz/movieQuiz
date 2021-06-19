@@ -1,6 +1,7 @@
 const questions = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-const questionCounterText = document.getElementById('questionCounter');
+const progressText = document.getElementById('progressText');
+const progressBarFull = document.getElementById('progressBarFull');
 const scoreText = document.getElementById('score');
 
 let currentQuestion = {};
@@ -103,7 +104,7 @@ let triviaQuestions = [{
         choice2: "Berlin",
         choice3: "Sokovia",
         choice4: "Budapest",
-        answer: 4
+        answer: 3
     },
     {
         question: "Complete the quote: 'That's my secret, Cap. I'm always...'",
@@ -267,21 +268,25 @@ getNewQuestion = () => {
 
     //if the user answers all questions available --> bring them to the score page
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        //store scores inputed by user to access them on end page
+        localStorage.setItem('mostRecentScore', score);
         //go to the end page
         return window.location.assign("/end.html")
     }
 
     //update the score dinamically as user answers questions
     questionCounter++;
-    questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+    progressText.innerHTML =`Question ${questionCounter}/${MAX_QUESTIONS}`;
+    //update and fill the progress bar
+    progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS)*100}%`;
 
     const questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
+    question.innerHTML = currentQuestion.question;
 
     choices.forEach(choice => {
         const number = choice.dataset['number'];
-        choice.innerText = currentQuestion['choice' + number];
+        choice.innerHTML = currentQuestion['choice' + number];
     });
 
     //remove used question from array not to reuse it
@@ -322,7 +327,7 @@ choices.forEach(choice => {
 //increment score counter
 incrementScore = num => {
     score += num;
-    scoreText.innerText = score;
+    scoreText.innerHTML = score;
 }
 
 startQuiz();

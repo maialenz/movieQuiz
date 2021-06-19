@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap");
+
+/*-----------general styles----------*/
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: lightgray;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif !important;
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+  margin: 0 0 0.9rem 0 !important;
+}
+
+h3.homepage-content {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 1.5rem !important;
+  font-weight: 300 !important;
+  margin-bottom: 1.5rem !important;
+  text-align: center !important;
+}
+
+h4 {
+  font-family: "Montserrat Alternates", sans-serif !important;
+  font-size: 1.06rem !important;
+  font-weight: 500 !important;
+}
+
+.card-text {
+  font-family: "Montserrat Alternates", sans-serif !important;
+  font-size: 1rem !important;
+  font-weight: 400;
+}
+
+/*---------------Logo----------------*/
+
+#main-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/*----------Home page section --------*/
+
+
+#homepage {
+  border: 1px solid darkgrey !important;
+  margin: 20px 30px 30px 30px !important;
+  padding: 30px !important;
+  background-color: rgba(173, 169, 183, 0.7);
+
+}
+
+.background-home {
+  opacity: 0.85;
+  height: 60%;
+  overflow: hidden;
+}
+
+.img {
+  opacity: 0.85;
+  margin-top: 0px;
+  overflow: hidden;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*-- game controls stying ------*/
+.controls-container {
+  background-color: rgba(87, 15, 55, 0.5);
+}
+
+.btn.controls,
+a.btn.controls {
+  border: 0.1rem solid lightgray !important;
+}
+
+.btn.controls:hover,
+a.btn.controls:hover,
+button#saveScore:hover {
+  background-color: rgba(87, 15, 55, 0.6) !important;
+  color: #fff !important;
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0;
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.card-img-top {
+  width: 100%;
+  padding: 10px;
+}
+
+
+/*-----------END.HTML----------------*/
+
+
+/*-------form-------*/
+
+#finalScore{
+  font-family: "Montserrat Alternates", sans-serif!important;
+  font-size: larger;
+}
+
+form {
+  margin-top: 2rem;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+form input {
+  width: 10rem;
+  height: 2rem;
+  padding: 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.5rem 0 rgba(87, 15, 55, 0.5);
+  justify-content: center;
+  text-align: center;
+ 
+}
+
+#saveScore {
+  background-color: rgba(87, 15, 55, 0.4);
+  font-weight: 400;
+  position: center;
+  height: 3rem;
+  width: 10rem;
+}
+
+a#goHome,
+a#restartGame {
+  background-color: rgba(87, 15, 55, 0.4);
+  font-weight: 400;
+  position: center;
+  width: 20rem;
+  overflow: hidden;
+}
+
+input::placeholder {
+  color: rgba(87, 15, 55, 0.7)
+}
+
+/*disable button until user enters username*/
+
+#saveScore[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+  
+}
+
+/*------------Media Queries--------------*/
+
+/*--- media querie for responsiveness of logo on small screens---*/
+@media screen and (max-width: 300px) {
+  .wrapper {
+    margin: 0;
+  }
+
+  .hud-prefix {
+    font-size: 0.7rem;
+  }
+
+}
+
+@media screen and (max-width: 641px) {
+  #end {
+    padding: 0;
+    margin: 6rem 2rem;
+    height: 70vw;
+  }
+
+  #main-logo {
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
+  #main-logo {
+    width: 40%;
+    /*anything bigger than 40% in xl screens causes pixelation*/
+  }
+}

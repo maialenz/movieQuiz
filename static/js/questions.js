@@ -41,6 +41,7 @@ let triviaQuestions = [ {
                 correctAnswer: 4
             },
             {
+                question: "What was Neville's favorite subject at Hogwarts?",
                 choice1: "Defense against the Dark Arts",
                 choice2: "Herbology",
                 choice3: "Potions",
