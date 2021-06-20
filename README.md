@@ -57,7 +57,7 @@ The website will be responsive and accessible on all devices The website will be
 
 7. [CREDITS](#credits)
 
-8. [REFERENCES](REFERENCES.md)
+8. [REFERENCES](#references)
 
 9. [ACKNOWLEDGEMENTS](#acknowledgements)
 
@@ -247,3 +247,6 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 - Markdown (for README.md, REFERENCES.md and TESTING.md)
 - JavaScript:
 
+## REFERENCESS
+
+https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/
