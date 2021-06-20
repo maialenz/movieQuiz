@@ -84,8 +84,7 @@ a.btn.controls {
 }
 
 .btn.controls:hover,
-a.btn.controls:hover,
-button#saveScore:hover {
+a.btn.controls:hover {
   background-color: rgba(87, 15, 55, 0.6) !important;
   color: #fff !important;
   cursor: pointer;
@@ -107,11 +106,11 @@ button#saveScore:hover {
 
 #finalScore{
   font-family: "Montserrat Alternates", sans-serif!important;
-  font-size: larger;
+  font-size: 5rem;
 }
 
 form {
-  margin-top: 5rem;
+  margin-top: 2rem;
   align-items: center;
   overflow-x: hidden;
 }
@@ -150,16 +149,23 @@ input::placeholder {
 }
 
 /*disable button until user enters username*/
-.btn[disabled]:hover {
+
+#saveScore[disabled]:hover {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
+  
 }
 
 /*------------Media Queries--------------*/
 
 /*--- media querie for responsiveness of logo on small screens---*/
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
+  
+  #homepage.border {
+    padding: 20px;
+  }
+
   .wrapper {
     margin: 0;
   }

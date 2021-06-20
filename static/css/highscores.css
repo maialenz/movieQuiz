@@ -1,0 +1,59 @@
+body {
+    background-color: rgba(87, 15, 55, 0.05) !important;
+}
+
+.wrapper {
+    background-color: rgba(173, 169, 183, 0.7);
+    margin: 3rem 6rem;
+    padding: 1rem 0;
+    border: 0.1rem solid darkgrey;
+    border-radius: 0.3125rem;
+}
+
+h1#finalScore {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    text-decoration: underline;
+}
+
+#highScoresList {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    list-style: none;
+}
+
+.high-score {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+    transform: scale(1.025)
+}
+
+
+@media screen and (max-width: 400px) {
+
+    .wrapper {
+        margin: 3rem 1.75rem;
+    }
+
+    h1#finalScore {
+        font-size: medium;
+    }
+
+    .high-score {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-bottom: 2rem 2rem;
+    }
+
+    #highScoresList {
+        font-size: 1.3rem;
+        padding: 0;
+        margin: 0;
+    }
+}

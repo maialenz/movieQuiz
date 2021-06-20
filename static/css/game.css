@@ -1,27 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap");
 
+body,
+html {
+    height: 100%
+}
+
+body {
+    background-color: rgba(87, 15, 55, 0.05) !important;
+}
+
 .logo {
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: 80%;
 }
 
+img#main-logo {
+    border: 0.2rem solid rgba(87, 15, 55, 0.8);
+    border-radius: 0.5rem;
+}
+
 .wrapper {
     background-color: rgba(173, 169, 183, 0.7);
-    margin: 1.5rem 1.75rem;
+    margin: 3rem 6rem;
     padding: 1rem 0;
     border: 0.1rem solid darkgrey;
     border-radius: 0.3125rem;
 }
 
-div #score-track#s-text#score,
-div #questions-track#q-text#q-count {
-    padding: 0 0;
-    margin: 0;
+h2#question {
+    margin-bottom: 2.5rem;
 }
 
-h2#question {
-    margin-bottom: 1rem;
+/*----------answer choices styling------*/
+
+#game {
+    margin-bottom: 4rem;
 }
 
 .choice-container {
@@ -56,14 +70,7 @@ h2#question {
     text-align: left;
 }
 
-
-button#restart-level-button,
-button#restart-game-button {
-    background-color: rgba(87, 15, 55, 0.4);
-    font-weight: 400;
-    margin: 0 0.3rem;
-    position: center;
-}
+/*-------Correct/Incorrect answer inner class colors--------*/
 
 .correct {
     background-color: rgb(181, 228, 140) !important;
@@ -84,10 +91,109 @@ button#restart-game-button {
 .hud-prefix {
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
 }
 
 .hud-main-text {
     text-align: center;
+}
+
+/*------------------Loader-------------------*/
+/*taken from https://www.w3schools.com/howto/howto_css_loader.asp*/
+
+.hidden {
+    display: none;
+}
+
+#loader {
+    border: 1.2 solid #f3f3f3;
+    border-top: 1.2 solid rgba(87, 15, 55, 0.6);
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/*--progress bar decorations--*/
+#progressBar {
+    width: 15rem;
+    height: 2.25rem;
+    border: 0.5rem solid rgba(87, 15, 55, 0.6);
+}
+
+#progressBarFull {
+    height: 1.25rem;
+    background-color: rgba(87, 15, 55, 0.6);
+    width: 0%;
+    /*start the progress bar empty*/
+}
+
+@media screen and (max-width: 641px) {
+    #main-logo {
+        width: 80%;
+    }
+
+    #progressBar {
+        width: 4.75rem;
+        height: 1.9rem;
+        border: 0.3rem solid rgba(87, 15, 55, 0.6);
+    }
+    .h2, h2 {
+        font-size: 1.5rem!important;
+        margin-bottom: 2rem;
+    }
+    .wrapper {
+        background-color: rgba(173, 169, 183, 0.7);
+        margin: 0.5rem 1.5rem;
+        padding: 1rem 0;
+        border: 0.1rem solid darkgrey;
+        border-radius: 0.3125rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .wrapper {
+        background-color: rgba(173, 169, 183, 0.7);
+        margin: 1rem 1rem;
+        padding: 1rem 0;
+        border: 0.1rem solid darkgrey;
+        border-radius: 0.3125rem;
+    }
+
+    .hud-prefix {
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-bottom: 0.2rem;
+    }
+
+    .choice-container {
+        font-size: 1rem;
+    }
+
+    .h2, h2 {
+        font-size: 1.5rem;
+    }
+    #progressBar {
+        width: 4rem;
+        height: 1.75rem;
+        border: 0.3rem solid rgba(87, 15, 55, 0.6);
+    }
+
+    #progressBarFull {
+        height: 1.1rem;
+        background-color: rgba(87, 15, 55, 0.6);
+    }
+
+}
+@media screen and (max-width: 650px) {
+
 }
