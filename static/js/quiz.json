@@ -1,0 +1,218 @@
+{
+    "harryPotter": [
+    {
+        "image_url":"",
+        "question": "What is the name of Harry Potter's owl?",
+        "answers": ["Scabbers", "Snowy", "Hedwig", "Errol"],
+        "correctAnswer" : "Hedwig"
+    },
+    {
+        "image_url":"",
+        "question": "What creature is Aragog?",
+        "answers": ["Giant House Spider", "Black Widow", "Tarantula", "Acromantula"],
+        "correctAnswer": "Acromantula"
+    },
+    {
+        "image_url":"",
+        "question": "Who killed Dobby by throwing a knife at him?",
+        "answers": ["Bellatrix Lestrange", "Alastor Moody", "Lucius Malfoy", "Voldemort"],
+        "correctAnswer": "Bellatrix Lestrange"
+    },
+    {
+        "image_url":"",
+        "question": "What was Hagrid's pet dog called?",
+        "answers": ["Nagini", "Fang", "Max", "Charlie"],
+        "correctAnswer": "Fang"  
+    },
+    {
+        "image_url":"",
+        "question": "What was Harry’s Patronus?",
+        "answers": ["A deer", "An Otter", "A cat", "A stag"],
+        "correctAnswer": "A stag"  
+    },
+    {
+        "image_url":"",
+        "question": "What is Neville Longbottom's favourite subject?",
+        "answers": ["Defense against the Dark Arts", "Herbology", "Potions", "Transfiguration"],
+        "correctAnswer": "Herbology"  
+    },
+    {
+        "image_url":"",
+        "question": "Where are the Slytherin common rooms located?",
+        "answers": ["The east wing", "The Dungeon", "Behind a painting", "Next to the kitchen"],
+        "correctAnswer": "The Dungeon"  
+    },
+    {
+        "image_url":"",
+        "question": "How many staircases are located in Hogwarts?",
+        "answers": ["506", "143", "142", "1201"],
+        "correctAnswer": "142"  
+    },
+    {
+        "image_url":"",
+        "question": "Ron Weasley had a phobia for which insect?",
+        "answers": ["Beatles", "Spiders", "Butterflies", "Mosquitoes"],
+        "correctAnswer": "Spiders"  
+    },
+    {
+        "image_url":"",
+        "question": "When is Harry Potter’s birthday?",
+        "answers": ["July 31rst", "December 18th", "May 17th", "August 3rd"],
+        "correctAnswer": "July 31"  
+    }
+
+],
+
+"marvelQuestions" : [
+    {
+        "image_url":"",
+        "question": "What is the real name of the Scarlet Witch?",
+        "answer1" : "Carol Danvers",
+        "answer2" : "Wanda Maximoff",
+        "answer3" : "Natasha Romanoff",
+        "answer4" : "Jessica Jones",
+        "correctAnswer": "Wanda Maximoff"
+    },
+    {
+        "image_url":"",
+        "question": "Which European city do Hawkeye and Black Widow often reminisce about?",
+        "answer1" : "Paris","Berlin"
+        "answer3" : "Sokovia",
+        "answer4" : "Budapest",
+        "correctAnswer": "Budapest"
+    },
+    {
+        "image_url":"",
+        "question": "Complete the quote: 'That's my secret, Cap. I'm always...'",
+        "answer1" : "green",
+        "answer2" : "mad",
+        "answer3" : "angry",
+        "answer4" : "ready",
+        "correctAnswer": "angry"
+    },
+    {
+        "image_url":"",
+        "question": "What is Captain America’s shield made out of?",
+        "answer1" : "Meteorite", 
+        "answer2" : "Vibranium",
+        "answer3" : "Carbon Fiber",
+        "answer4" :  "Graphene",
+        "correctAnswer": "Vibranium"
+    },
+    {
+        "image_url":"",
+        "question": "In which film’s post-credit scene did Thanos first appear?",
+        "answer1" : "Ant Man",
+        "answer2" : "Spiderman",
+        "answer3" : "The Avengers",
+        "answer4" : "Black Panther",
+        "correctAnswer": "The Avengers"
+    },
+    {
+        "image_url":"",
+        "question": "How many Infinity Stones are there?",
+        "answer1" : "4",
+        "answer2" : "5",
+        "answer3" : "6",
+        "answer4" : "7",
+        "correctAnswer": "6"
+    },
+    {
+        "image_url":"",
+        "question": "Which beloved comic book writer cameoed in every Marvel film up to Avengers: Endgame?",
+        "answer1" : "Stan Lee",
+        "answer2" : "The Russo brothers",
+        "answer3" : "Frank Miller",
+        "answer4" : "Geoff Johns",
+        "correctAnswer": "Stan Lee"
+    },
+    {
+        "image_url":"",
+        "question": "Director Taika Waititi also plays which comedic Thor: Ragnarok character?",
+        "answer1" : "Skurge",
+        "answer2" : "Bob",
+        "answer3" : "Miek",
+        "answer4" : "Korg",
+        "correctAnswer": "Korg"
+    },
+    {
+        "image_url":"",
+        "question": "Who was the first female superhero to appear in the title of an MCU film?",
+        "answer1" : "Black Widow",
+        "answer2" : "Jessica Jones",
+        "answer3" : "Wasp",
+        "answer4" : "Gamora",
+        "correctAnswer": "Wasp"
+    },
+    {
+        "image_url":"",
+        "question": "What name is Wolverine also known by?",
+        "answer1" : "Logan",
+        "answer2" : "Hogan",
+        "answer3" : "Gogan",
+        "answer4" : "Morgan",
+        "correctAnswer": "Logan"
+    }
+],
+"starwarsQuestions" : [
+    {
+        "image_url":"",
+        "question": "Who are the only two characters who appear in every Star Wars movie?",
+        "answers": ["Darth Vader and Luke","Han Solo and Chewbacca","Obi-Wan and Leia","C-3PO and R2-D2"],
+        "correctAnswer": "C-3PO and R2-D2"
+    },
+    {
+        "image_url":"",
+        "question": "Who played Mace Windu?",
+        "answers": ["Samuel L. Jackson","Liam Neeson", "Mark Hamill", "Hayden Cristensen"],
+        "correctAnswer": "a"
+    },
+    {
+        "image_url":"",
+        "question": "Who built C-3PO?",
+        "answers": ["Kylo Ren","Anakin Skywalker","Obi-Wan Kenobi","Lando Calrissian"],
+        "correctAnswer": "Anakin Skywalker"
+    },
+    {
+        "image_url":"",
+        "question": "What species is Jabba?",
+        "answers": ["Hutt","Wookie","Ewok","Chagrian"],
+        "correctAnswer": "Hutt"
+    },
+    {
+        "image_url":"",
+        "question": "What kind of vehicle did Rey live in?",
+        "answers": ["AT-ST Walker","AT-ACT Walker","AT-TE Walker","AT-AT Walker"],
+        "correctAnswer": "AT-AT Walker"
+    },
+    {
+        "image_url":"",
+        "question": "Who composed the iconic Star Wars theme?",
+        "answers": ["Hans Zimmer","Ennio Morricone","John Williams","James Horner"],
+        "correctAnswer": "John Williams"
+    },
+    {
+        "image_url":"",
+        "question": "When was Star Wars: A new Hope (Episode IV) released?",
+        "answers": ["1976","1977","1978","1979"],
+        "correctAnswer": "1977"
+    },
+    {
+        "image_url":"",
+        "question": "How many Star Wars movies did Warwick Davis appeared in",
+        "answers": ["3","4","5","6"],
+        "correctAnswer": "5"
+    },
+    {
+        "image_url":"",
+        "question": "How old was Yoda when he died?",
+        "answers": ["600","340","250","900"],
+        "correctAnswer": "900"
+    },
+    {
+        "image_url":"",
+        "question": "What was the cause of Yoda's death?",
+        "answers": ["Old age","Lightsaver","Fell of speeder","Shot by Stormtrooper"],
+        "correctAnswer": "Old age"
+    }
+]}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The ultimate Movie Trivia! Test you film knowledge and see if you get all of them right!" />
+    <meta name="keywords" content="trivia, quiz, game, fun" />
+    <meta name="author" content="Maialen Zumeta" />
+
+    <title>The ultimate Movie Trivia</title>
+
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="static/css/game.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
+        integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg=="
+        crossorigin="anonymous" />
+
+    <!--favicon-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon/favicon-16x16.png">
+
+</head>
+
+
+<body>
+
+    <!--logo-->
+
+    <div class="container-fluid logo justify-content-center">
+        <div class="row">
+            <div class="col-12">
+                <img src="static/images/trivia_logo.jpg" alt="trivia name and logo" id='main-logo'>
+            </div>
+        </div>
+    </div>
+
+    <!--game section-->
+    <div class="wrapper">
+        <div id="gamepage">
+
+            <!--heads-up-display = (hud)-->
+            <div class="container-fluid" id="hud">
+
+                    <div id="hud-item">
+                        <p class="hud-prefix" id="progressText">
+                            Question
+                        </p>
+                        <div id="progressBar">
+                            <div id="progressBarFull"></div>
+                        </div>
+                    </div>
+                    <div id="hud-item">
+                        <p class="hud-prefix">
+                            Score
+                            <i class="fas fa-bolt"></i>
+                        </p>
+                        <h2 class="hud-main-text" id="score">
+                            0
+                        </h2>
+                        
+                    </div>
+              
+            </div>
+            <!--/hud-->
+
+            <div class="container-fluid">
+                <div id="game" class="justify-center text-center flex-column">
+                    <h2 id="question">Here goes the question!</h2>
+                    <div class="choice-container">
+                        <p class="choice-prefix">a</p>
+                        <p class="choice-text" data-number="1">Choice 1</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">b</p>
+                        <p class="choice-text" data-number="2">Choice 2</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">c</p>
+                        <p class="choice-text" data-number="3">Choice 3</p>
+                    </div>
+                    <div class="choice-container">
+                        <p class="choice-prefix">d</p>
+                        <p class="choice-text" data-number="4">Choice 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="static/js/questions.js" type="module"></script>
+    <script src="static/js/game.js"></script>
+
+</body>
+
+</html>

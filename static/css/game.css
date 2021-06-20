@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap");
+
+.logo {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+}
+
+.wrapper {
+    background-color: rgba(173, 169, 183, 0.7);
+    margin: 1.5rem 1.75rem;
+    padding: 1rem 0;
+    border: 0.1rem solid darkgrey;
+    border-radius: 0.3125rem;
+}
+
+div #score-track#s-text#score,
+div #questions-track#q-text#q-count {
+    padding: 0 0;
+    margin: 0;
+}
+
+h2#question {
+    margin-bottom: 1rem;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    border: 00.1rem solid rgba(87, 15, 55, 0.2);
+    border-radius: 0.3125rem;
+    background-color: #fff
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    margin: 0;
+    padding: 1rem 2rem;
+    background: rgba(87, 15, 55, 0.8);
+    border-radius: 0.3125rem;
+    color: #fff;
+}
+
+.choice-text {
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+}
+
+
+button#restart-level-button,
+button#restart-game-button {
+    background-color: rgba(87, 15, 55, 0.4);
+    font-weight: 400;
+    margin: 0 0.3rem;
+    position: center;
+}
+
+.correct {
+    background-color: rgb(181, 228, 140) !important;
+}
+
+.incorrect {
+    background-color: rgb(229, 56, 59) !important;
+}
+
+/*----------------HUD-----------------*/
+
+#hud {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
