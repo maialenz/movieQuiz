@@ -1,10 +1,15 @@
-const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('choice-text'));
-const progressText = document.getElementById('progressText');
-const progressBarFull = document.getElementById('progressBarFull');
-const scoreText = document.getElementById('score');
-const loader = document.getElementById('loader');
-const game = document.getElementById('gamepage');
+// Constants for the game
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 10;
+const URL = "https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple"
+
+let question = document.getElementById('question');
+let choices = Array.from(document.getElementsByClassName('choice-text'));
+let progressText = document.getElementById('progressText');
+let progressBarFull = document.getElementById('progressBarFull');
+let scoreText = document.getElementById('score');
+let loader = document.getElementById('loader');
+let game = document.getElementById('gamepage');
 
 let currentQuestion = {};
 let acceptingAnswers = false;
@@ -13,7 +18,8 @@ let questionCounter = 0;
 let availableQuestions = [];
 
 let triviaQuestions = [];
-const URL = "https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple"
+
+
 //fetch questions from the open API
 fetch(URL)
     .then((res) => {
@@ -21,11 +27,11 @@ fetch(URL)
     })
     .then((loadedQuestions) => {
         triviaQuestions = loadedQuestions.results.map((loadedQuestion) => {
-            const formattedQuestion = {
+            let formattedQuestion = {
                 question: loadedQuestion.question,
             };
 
-            const answerChoices = [...loadedQuestion.incorrect_answers];
+            let answerChoices = [...loadedQuestion.incorrect_answers];
             formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
             answerChoices.splice(
                 formattedQuestion.answer - 1,
@@ -44,10 +50,6 @@ fetch(URL)
     .catch((err) => {
         console.error(err);
     });
-
-// Constants for the game
-const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 10;
 
 
 startQuiz = () => {
@@ -70,7 +72,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
-        return window.location.assign("/end.html")
+        return window.location.assign("end.html")
     }
 
     //update the score dinamically as user answers questions
@@ -79,12 +81,12 @@ getNewQuestion = () => {
     //update and fill the progress bar
     progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS)*100}%`;
 
-    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    let questionIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionIndex];
     question.innerHTML = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset['number'];
+        let number = choice.dataset['number'];
         choice.innerText = currentQuestion['choice' + number];
     });
 
@@ -93,17 +95,18 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-//Event Lisstener for selecting answers
+//initialize the questions
+//Event Listener for selecting answers
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
 
         //create delay before they can answer
         acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
+        let selectedChoice = e.target;
+        let selectedAnswer = selectedChoice.dataset['number'];
 
-        const classToApply =
+        let classToApply =
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
 
         //increment score only if user answers question correctly
@@ -128,3 +131,4 @@ incrementScore = num => {
     score += num;
     scoreText.innerHTML = score;
 }
+

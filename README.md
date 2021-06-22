@@ -216,7 +216,7 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 - **Game:** 
 
   - A section above the displayed question with two areas: the area on the left counts the current question with a progress bar to make the counter more appealing and easier to visually see it. The area on the right display the added score when the user answers the question correctly. 
-  - There will be 10 questions on display.
+  - There will be 10 questions on display. The questions have been created thanks to the use of an open Trivia API. They load auto
   - The user will be given 4 multiple choice answers. The user has to click on the answer. The answer will turn red or green depending if the answer is correct or incorrect. The user won't be able to see right answer if the choice is incorrect, as the intention is to be able to retake the quiz and try to beat their own score,
   - The question will automatically load a second after the user has made the selection, so there will not be any buttons for the user to jump into the next question manually. This is to make the user's experience nicer, by clicking less.
     
