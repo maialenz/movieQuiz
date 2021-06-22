@@ -7,6 +7,7 @@ let question = document.getElementById('question');
 let choices = Array.from(document.getElementsByClassName('choice-text'));
 let progressText = document.getElementById('progressText');
 let progressBarFull = document.getElementById('progressBarFull');
+let errorMessage = document.getElementById('errorMessage');
 let scoreText = document.getElementById('score');
 let loader = document.getElementById('loader');
 let game = document.getElementById('gamepage');
@@ -48,6 +49,7 @@ fetch(URL)
         startQuiz();
     })
     .catch((err) => {
+       errorMessage.innerHTML = `Oopss!! Sorry...It's not you, it's us... Please refresh the page and try again!`;
         console.error(err);
     });
 
