@@ -231,11 +231,16 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 ### Features left to implement
 
+- The option to choose a theme or characted: although this was part of the first planning, the implementation of the API created the issue of separating the available questions on themes, as this particular API does not separate the available film questions on different categories or themes. I decided to leave this feature for future releases because the implementation of this would mean that I would have to change the main subject of the trivia. In future releases it is expected to change the main subject of the trivia from 'Movie Quiz/Trivia' to 'Ultimate Trivia' with the posibility of choosing themes/categories and selecting the subject that the user would like to be quized on.
+
 - The posibility of choosing different difficulty: in the first release, there won't be any option to select the difficulty and complexity of the questions, but in a future release there would be three different options for the user to select (easy, medium, hard)
 
-- A countdown timer:
+- A countdown timer: Due to the learning curve I had to endure to create this application, I decided to leave the countdown out for the time being, as I wanted to focus on learning how to implement the most important functionalities for the enjoyment of this game.
 
-- An API 
+- A restart button under the questions on the game: As the first release of the application, it was decided to leave the restart button for the end of the quiz, but for future releases it's expected to add a restart CTA button under the questions so the user would be able to restart the quiz. In this release, the user will only be able to restart the quiz/trivia at the end of the quiz, when the end.html page loads.
+
+- A confirm modal: when the user clicks on the restart button under the questions on future releases, the user would be presented with a modal to confirm that the user will be sent to the start of the quiz and will lose all progress achieved to that point. This will be a feature to improve user experience and to make sure the user doesn't accidentaly lose all the points collected to that point.
+
 ---
 
 ## TECHNOLOGIES USED
@@ -247,7 +252,8 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 - CSS:
   - Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML
 - Markdown (for README.md, REFERENCES.md and TESTING.md)
-- JavaScript:
+- JavaScript: 
+  - Javascript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.
 
 ## REFERENCESS
 
