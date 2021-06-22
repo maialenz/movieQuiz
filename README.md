@@ -8,9 +8,9 @@
 
 ## Overview
 
-This website is an entertaining quiz game for those who want to have fun testing their general knowledge about classic and new movies, by answering a series of questions and trying to beat their own scores.
+This website is an entertaining quiz game for those who want to have fun testing their general knowledge about the film industry, by answering a series of questions and trying to beat their own scores.
 
-The website will be responsive and accessible on all devices The website will be visually enjoyable and interactive. It will be aimed for people who want to have some fun and learn something new while playing.
+The website will be responsive and accessible on all devices, but it's optimized to be played on a medium/large screen. The website will be visually minimal to focus on the questions and interactive. It will be aimed for people who want to have some fun and learn something new while playing.
 
 ---
 
@@ -68,20 +68,19 @@ The website will be responsive and accessible on all devices The website will be
 - As a user I want to:
 
     - Be able to have the game rules available.
-    - Be able to choose a theme.
     - Be able to start the quiz by clicking a single button.
     - Be able to choose my answer from a multiple choise answer to each question.
     - See my score as I progress through the game
     - Know which question I am currently on
-    - Get a feedback with the total score and the option to retake the quiz or choose a new theme.
+    - Get a feedback with the total score and the option to retake the quiz or go to the main menu.
 
 ### **Game goals**
 
-This is a simple "trivia" game to test the general knowledge about movies and some fun facts about the industry. The player needs to choose one answer from the given multiple choice. If the answer is right, the user will get a score added in the score bar. If the answer is incorrect, the user won't be able to change the answer and there won't be any points added.
+This is a simple "trivia" game to test the general knowledge about movies and some facts about the industry. The player needs to choose one answer from the given multiple choice. If the answer is right, the user will get a score added in the score bar. If the answer is incorrect, the user won't be able to change the answer and there won't be any points added. The user won't be able to see the right answer as this will give them the choice to retake the quiz and beat their top 5 highest scores. 
 
-Once the player has chosen the answer, press Next to continue to the following question. At the end of the game, all the correct answers will be added and the player will get the result.
+Once the player has pressed on the chosen answer, they'll have a second to see if their result is correct or incorrect, and the next question will load automatically. At the end of the game, all the correct answers will be added and the player will get the total result.
 
-This quiz has been created for entertaiment purposes.
+This quiz has been created for entertaiment purposes using a public [Trivia API](https://opentdb.com/).
 
 ---
 
@@ -102,7 +101,7 @@ By answering the questions, the user will be able to find entertainment and enjo
 
   - They also need to have basic understanding on how to select and navigate the page.
 
-  - This page can be done with Bootstrap framework to create a structure and implement sections that the user needs. The quiz will be kept separated in 3 different themes but easyly accessible from the homepage.
+  - This page can be done with Bootstrap framework to create a structure and implement sections that the user needs. The quiz will be kept separated in 3 main sections (homepage, game and end) but easyly accessible from the homepage. The High scores ranking will be accessible from the main page and the user will input their username on the last page once the quiz ends.
 
 ---
 
@@ -110,9 +109,8 @@ By answering the questions, the user will be able to find entertainment and enjo
 
 - **Features within the design plan with highest priority:**
 
-  - Appealing homepage 
-  - Ability to choose a theme
-  - Following [Bootstrap](https://getbootstrap.com/) grid system with the layout of the site being mainly in thirds and halfs (col-6 col-4).
+  - Minimal but appealing homepage 
+  - Start button easily accessible from
   - Instructions for the user on how to play the game
   - Tracker for the questions and score
   - Final page with the final result
@@ -125,18 +123,21 @@ By answering the questions, the user will be able to find entertainment and enjo
   - Different levels of difficulty.
   - To give the feedback with the correct answer in the answer is incorrect
   - Populate questions by using a trivia API.
+
 ---
 ### Structure Plane
 
-- The structure of the site will be layed out in four pages.The landing page (homepage) with the themes separated in three clickable images. By clicking on a theme user will be redirected to a page with the respective questions shown as well as an image representing each question.
+- The structure of the site will be layed out in four pages.The landing page (homepage) and three clickable buttons (Start Quiz, High Scores and Instructions).
 
-- Depending on the device, the image representing the question will be on the left side of the question and answers, or on the top of each question. 
+- The Start Quiz will retrieve questions from an API and it's set to easy so the user can enjoy answering the questions without the added difficulty.
 
-- A button representing the link to the next question will be available under each question. There won't be a previous button as the user won't be able to change the score.
+- If the questions take longer to load, the user will be presented with a loader as a sign that something is happening
 
-- The time and score count will be represented at the bottom of the page (above the footer).
+- 
 
-- To ensure the users experience when completing the quiz the end page will show the final score and time required to finish the quiz, as well as two buttons allowing the user to go back to the main page or retake the same quiz.
+- The score count will be represented at the top of the page (above the footer).
+
+- To ensure the users experience when completing the quiz the end page will show the final score, as well as two buttons allowing the user to go back to the main page or retake the same quiz.
 
 - The footer will contain all the inportant some information about the creator of the quiz.
 
@@ -151,6 +152,7 @@ By answering the questions, the user will be able to find entertainment and enjo
 ## DESIGN
 
 The design of the quiz was created to be as simple but pretty as posible, not to distract the customer with too many color schemes and trying to bring the focus to the picture related to the question.
+
 ### **Colors**
 
 The colors used in this project are very simple, to keep a minimalistic and tidy quiz, as well as keeping the color contrasts the highests posible to facilitate the screen readers and make this quiz accessible to all.
@@ -160,13 +162,11 @@ The colors chosen are combinations of: pale/light blue and green, white and shad
 
 Some of the colors used in this project are: 
 
->* **(THIS will CHANGE DURING THE PROJECT!! these are old colors from previous projects!!)**
-
-- #a0e0ca: for button background when hovered.
-- #ffffff: for some section backgrounds.
-- rgba(170, 213, 222, 0.5): for header backgrounds and feedback article background.
-- #e9ecefab: as about us information background
-- #373d3f: as main typography color.
+- rgb(87, 15, 55): this color was used as the main color, but I've added opacity to make different shades of it.
+- rgba(173, 169, 183, 0.7): used as a background color.
+- #fff: used as button background color.
+- rgb(181, 228, 140) for correct answers.
+- rgb(229, 56, 59) for incorrect answers.
 
 ---
 
@@ -180,11 +180,12 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 ---
 ### **Imagery**
 
-- The imagery will be very important on the site, as it's a way to give a little hint about the respective question to the user.
 
-- Each theme will have imagery related to it's theme, so the user knows which theme is playing.
+- The website will try keep a balance between aesthetic style and fun without overwhelming the user and slowing the loading time of the page, so it was decided to only include one image at the beginning of the site (homepage) as a welcome to the user and introduction to the theme of the trivia/quiz.
 
-- The website will try keep a balance between aesthetic style and fun without overwhelming the user and slowing the loading time of the page.
+- I thought that any other images (end page and highscore page) where out of place, as the user would only want to see the important part: their score and end results.
+
+- Althought in the beginning I wanted to include an image for every question I created, as I decided to use an API instead of the hard coded questions, this wasn't a priority for this release, so I decided to leave this for future releases.
 
 ---
 ### **Logo**
@@ -200,31 +201,32 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 ### Existing Features
 
-- The site will consist of a single page divided on three big sections which will work as three page: based on the user selection, the application will show the respective section. The site will be responsive for most screen sizes. 
+- The site will consist of four pages: homepage, the game page, the end page and the highscores page. Based on the user selection, the application will show the respective page. The site will be responsive for most screen sizes, but it's best enjoyed on medium screens.
 
-- **Header:** 
+- **Homepage:** 
 
-  - Navbar:
-    - It'll include a link to the main page in the site. The link will increase on size when hovered over it.
-    - Change of color and size on the links when hovered over the buttons
+  - Logo
+  - Header: An area to introduce the user to the game
+  - Image: to set the theme of the quiz visually
+  - Controls Section: under the hero image there will be a section highlighted on another darker color with lighter buttons to point the user to the contol section:
+    - Start the game Button: 'Start' button to hint the user to click on it to Start the quiz
+    - High Score Button: a button directing the user to the top 5 scores page which are saved on the end page.
+    - A modal button which contains the instructions of the game.
 
-- **Body:** 
+- **Game:** 
 
-  - Home section:
-    - An area to introduce the user to the game
-    - An area with three clickable images, each linking to their respective theme quiz. 
-    - Under each image there will be a 'Start' button to hint the user to click on it to Start the quiz.
-
-  - Quiz section: will be the same in all three themes. There will be 3 to 10 questions on display. Only the question and the imagery will change.
-    - The section will be divided in two. One part will have the picture of the movie related to the question, and another part with the question and a multiple choice answers.
-    - An at the bottom showing the score count (correct answers and incorrect answers).
-  - Feedback section:
-    - An with the score summary, as well as a sentence with some feedback to the user.
+  - A section above the displayed question with two areas: the area on the left counts the current question with a progress bar to make the counter more appealing and easier to visually see it. The area on the right display the added score when the user answers the question correctly. 
+  - There will be 10 questions on display.
+  - The user will be given 4 multiple choice answers. The user has to click on the answer. The answer will turn red or green depending if the answer is correct or incorrect. The user won't be able to see right answer if the choice is incorrect, as the intention is to be able to retake the quiz and try to beat their own score,
+  - The question will automatically load a second after the user has made the selection, so there will not be any buttons for the user to jump into the next question manually. This is to make the user's experience nicer, by clicking less.
+    
+- **End:** This will be the feedback page.
+    - There will be a section with the score summary, which will be updated as the user answers correct questions. As each question is 10 points the maximum amount of points the user can get is 100 points.
+    - The save button will be disabled until the user starts typing on the input area. When the input is filled the save button will be active.
+    - Under the score there will be a input gap whith username as a placeholder where the user will be able to input their name and save it. The top 5 saved scores will be shown on the Highscore page accessible from a button placed on the homepage
     - Two call to action buttons with color changing hover feature allowing the user to return to the main page or to retake the same quiz .
 
-- **Footer:** it will be repeated in all the pages for consistency and good user experience
-  - Contact details: creator's email
-
+ 
 ---
 
 ### Features left to implement
