@@ -157,8 +157,7 @@ The design of the quiz was created to be as simple but pretty as posible, not to
 
 The colors used in this project are very simple, to keep a minimalistic and tidy quiz, as well as keeping the color contrasts the highests posible to facilitate the screen readers and make this quiz accessible to all.
 
-The colors chosen are combinations of: pale/light blue and green, white and shades of grey. The color were found using
-[Coolors](https://coolors.co/)
+The colors chosen are combinations of: pale/light and darks purple, white and shades of grey. The color were found using [Coolors](https://coolors.co/).
 
 Some of the colors used in this project are: 
 
@@ -174,8 +173,9 @@ Some of the colors used in this project are:
 
 The fonts used for the site were taken from [Google Fonts](https://fonts.google.com/). To make sure the questions are represented on a fun way but easy to read, it was decided to use simple but and consistent fonts previously used in other projects within Code Institute like:
 
-- "Montserrat alternates" 
-- "Quicksand"
+- "Montserrat alternates": to create fun and attractive fonts as well as drawing attention to the most important information.
+- "Quicksand": for more suttle but attractive font. It's clean and simple, making this a pleasant font to look at.
+- Sans-serif: used as a fallback font in cases there is an issue when importing fonts or the browser does not support these.
 
 ---
 ### **Imagery**
@@ -194,14 +194,13 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 - The logo's design represents the film industry and is easily recogniseable by users as a movie orientated game.
 
-
 ---
 
 ## FEATURES
 
 ### Existing Features
 
-- The site will consist of four pages: homepage, the game page, the end page and the highscores page. Based on the user selection, the application will show the respective page. The site will be responsive for most screen sizes, but it's best enjoyed on medium screens.
+- The site will consist of four pages: homepage, the game page, the end page and the highscores page. Based on the user selection, the user will be taken to the respective page. The site will be responsive for most screen sizes, but it's best enjoyed on medium to large size screens.
 
 - **Homepage:** 
 
@@ -240,6 +239,8 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 - A restart button under the questions on the game: As the first release of the application, it was decided to leave the restart button for the end of the quiz, but for future releases it's expected to add a restart CTA button under the questions so the user would be able to restart the quiz. In this release, the user will only be able to restart the quiz/trivia at the end of the quiz, when the end.html page loads.
 
 - A confirm modal: when the user clicks on the restart button under the questions on future releases, the user would be presented with a modal to confirm that the user will be sent to the start of the quiz and will lose all progress achieved to that point. This will be a feature to improve user experience and to make sure the user doesn't accidentaly lose all the points collected to that point.
+
+- Navbar and footer: as this is a simple quiz application, it was decided not to include any navbars or footers as they were thought to be irrelevant for this first release. For future releases, as the application increases on themes/categories, difficulty... it's expected to contain a responsive navbar for better UX and easier access to subcategories and dropdown buttons. The same way, the footer would contain a email and contact information so users can contact the creator and send feedback and/or proposed questions to include on the quiz. 
 
 ---
 
