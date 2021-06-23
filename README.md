@@ -355,6 +355,26 @@ The project was deployed using [GitHub Pages](https://pages.github.com/) using t
 6. When the loading is finished, scroll back down to the GitHub pages section where you will find the deployed [link](https://maialenz.github.io/movieQuiz/) to the website.
    ![Screenshot of the deployed link within GitHub pages](docs/deployment/githubdeployedlink.png)
 
+---
+
+### Forking the GitHub repository
+
+It is posible to copy and edit this project by any user without changing the repository on the original GitHub account. This can be done by forking the repository by following the following steps (Forking will only make a copy of the original project, so any changes won't affect the original):
+
+1. Log in to [GitHub](https://github.com/join/get-started) and locate the [GitHub repository](https://github.com/maialenz/movieQuiz)
+
+   - You can also find it by seaching maialenz/movieQuiz on the [GitHub](https://github.com/) seach-bar.
+
+2. Below the repository title at the top, above the "Settings" button on the horizontal menu and under the user's profile logo, locate the "Fork" button and click on it.
+   ![screenshot of the fork button](docs/deployment/forkbutton.png)
+
+3. You will have made a copy of the whole repository in your own GitHub account.
+
+4. To share the changes/edits you have made to improve the original project with the owner, you can submit a pull request.
+   Find the details to do so following this [link](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request-from-a-fork).
+
+---
+
 ## REFERENCESS
 
 https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/
