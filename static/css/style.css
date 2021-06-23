@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap");
 
 /*-----------general styles----------*/
@@ -88,9 +95,16 @@ a.btn.controls:hover {
   background-color: rgba(87, 15, 55, 0.6) !important;
   color: #fff !important;
   cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0;
-  transform: translateY(-0.1rem);
+  -webkit-box-shadow: 0 0.4rem 1.4rem 0;
+          box-shadow: 0 0.4rem 1.4rem 0;
+  -webkit-transform: translateY(-0.1rem);
+      -ms-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  -o-transition: transform 150ms;
   transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
 }
 
 .card-img-top {
@@ -111,7 +125,9 @@ a.btn.controls:hover {
 
 form {
   margin-top: 2rem;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   overflow-x: hidden;
 }
 
@@ -121,8 +137,11 @@ form input {
   padding: 1.5rem;
   font-size: 1.1rem;
   border: none;
-  box-shadow: 0 0.1rem 0.5rem 0 rgba(87, 15, 55, 0.5);
-  justify-content: center;
+  -webkit-box-shadow: 0 0.1rem 0.5rem 0 rgba(87, 15, 55, 0.5);
+          box-shadow: 0 0.1rem 0.5rem 0 rgba(87, 15, 55, 0.5);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
  
 }
@@ -142,6 +161,22 @@ a#restartGame {
   overflow: hidden;
 }
 
+input::-webkit-input-placeholder {
+  color: rgba(87, 15, 55, 0.7)
+}
+
+input::-moz-placeholder {
+  color: rgba(87, 15, 55, 0.7)
+}
+
+input:-ms-input-placeholder {
+  color: rgba(87, 15, 55, 0.7)
+}
+
+input::-ms-input-placeholder {
+  color: rgba(87, 15, 55, 0.7)
+}
+
 input::placeholder {
   color: rgba(87, 15, 55, 0.7)
 }
@@ -150,8 +185,11 @@ input::placeholder {
 
 #saveScore[disabled]:hover {
   cursor: not-allowed;
-  box-shadow: none;
-  transform: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
   
 }
 
