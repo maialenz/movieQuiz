@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap");
 
 body,
@@ -39,6 +46,8 @@ h2#question {
 }
 
 .choice-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-bottom: 0.5rem;
     width: 100%;
@@ -50,9 +59,16 @@ h2#question {
 
 .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0;
-    transform: translateY(-0.1rem);
+    -webkit-box-shadow: 0 0.4rem 1.4rem 0;
+            box-shadow: 0 0.4rem 1.4rem 0;
+    -webkit-transform: translateY(-0.1rem);
+        -ms-transform: translateY(-0.1rem);
+            transform: translateY(-0.1rem);
+    -webkit-transition: -webkit-transform 150ms;
+    transition: -webkit-transform 150ms;
+    -o-transition: transform 150ms;
     transition: transform 150ms;
+    transition: transform 150ms, -webkit-transform 150ms;
 }
 
 .choice-prefix {
@@ -83,8 +99,11 @@ h2#question {
 /*----------------HUD-----------------*/
 
 #hud {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin-bottom: 1.5rem;
 }
 
@@ -113,12 +132,18 @@ h2#question {
     border-radius: 50%;
     width: 12rem;
     height: 12rem;
-    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   }
   
   @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
   }
 
 /*--progress bar decorations--*/
