@@ -426,7 +426,40 @@ $ python3 -m http.server
    ![screenshot of opening gitwork workspace](docs/deployment/gitpod-workspace-open.png)
 
 ---
+## CREDITS
 
-## REFERENCESS
+As this has been the first project using a new programming language like JavaScript, I found this second milestone project very challenging. Without any previous programming knowledge, I found myself using a great variaty of documentation and tutorials to revisit the lessons learnt during this module with Code Institute. 
+This project has really put my research and understanding skills to the test, but it has been a great learning curve, and all the tutorials I followed really helped with this.
+
+### REFERENCES
+
+- Previous to deciding to create separate pages for each game section, I learned how to fade questions from this post on [StackOverflow](https://stackoverflow.com/questions/15348725/how-to-make-quiz-questions-appear-one-at-a-time-in-javascript)
+
+- Learned how to fetch from [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
+- I found this very helpful: how to import json files [Amit Diwan](https://www.tutorialspoint.com/how-to-import-local-json-file-data-to-my-javascript-variable)
+
+- Although at the end I decided not to include hard coded questions, I learned how to import the json file with the help of this article [Stefan Judis](https://www.stefanjudis.com/snippets/how-to-import-json-files-in-es-modules-node-js/)
+
+- Took the idea to include the Open Trivia API from [Benjamin Siegel](https://www.youtube.com/watch?v=SgJ_femmsfg&t=615s)
+
+- Understood .splice thanks to [Ania Kubów](https://www.youtube.com/watch?v=E01cd5ZTQMU&list=RDCMUC5DNytAJ6_FISueUfzZCVsw&index=22)
+
+- Followed this tutorial to help me understand the structure of the quiz [Yaphi Berhanu](https://www.sitepoint.com/simple-javascript-quiz/)
+
+- My code was highly influenced by this tutorial by [James Q Quick tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
+
+- Learned more about fetch from [John Linatoc](https://medium.com/@johnwadelinatoc/manipulating-the-dom-with-fetch-7bfddf9c526b)
+
+- Borrowed idea for how to remove hover on touch devices from [Stefan Judis](https://www.stefanjudis.com/today-i-learned/the-hover-media-query-can-help-to-remove-hover-styles-on-touch/)
+
+- Learned about routing and relative URL paths on [Stack Overflow](https://stackoverflow.com/questions/1655065/redirecting-to-a-relative-url-in-javascript)
+
+
+---
+
+### Images
+
+- To [Jon Tyson](https://unsplash.com/@jontyson) for the picture used on the homepage taken from [unsplash](https://unsplash.com/)
 
 https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/
