@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body {
     background-color: rgba(87, 15, 55, 0.05) !important;
 }
@@ -31,7 +38,9 @@ h1#finalScore {
 }
 
 .high-score:hover {
-    transform: scale(1.025)
+    -webkit-transform: scale(1.025);
+        -ms-transform: scale(1.025);
+            transform: scale(1.025)
 }
 
 
