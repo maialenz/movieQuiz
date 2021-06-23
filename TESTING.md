@@ -46,10 +46,25 @@ As a css validator, I also used [w3 Validator](https://jigsaw.w3.org/css-validat
 
 ### HTML VALIDATOR:
 
-List of errors found by the validator to be fixed (after the first run):
+INDEX.html:
 
+- Line 125: : Element biggest not allowed as child of element li in this context.
+    - Removed Biggest element from line 125
 
+GAME.html: 
+- Line 63 and 71: Error: Duplicate ID hud-item.
+    - Changed the id attribute and changed it for a class
 
+- Line 87: Warning: Empty h2 heading.
+    - I added a header which will be populated the fetched question from the API
+
+END.html: 
+- Line 49: Error: Attribute classs not allowed on element div at this point.
+    - Fixed class typing error.
+
+- Line 52: Warning: Empty heading.
+    - Placed some text which will replace by the js end function.
+    
 bug --> footer middle of the page --> removed it, didnt need for quiz game
 
 bug --> when selecting answers all answers would come out as incorrect
