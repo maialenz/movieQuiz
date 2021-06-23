@@ -35,6 +35,7 @@ saveHighScore = (e) => {
     highScores.splice(5);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
+    // code written based on the code written by Sean from tutor support to help fix URL issue
     let url = window.location.protocol + "//" + window.location.host + "/"
     if (window.location.href.includes('github')) url += 'movieQuiz/highscores.html'
     else url += 'highscores.html';
