@@ -435,9 +435,23 @@ This project has really put my research and understanding skills to the test, bu
 
 - Previous to deciding to create separate pages for each game section, I learned how to fade questions from this post on [StackOverflow](https://stackoverflow.com/questions/15348725/how-to-make-quiz-questions-appear-one-at-a-time-in-javascript)
 
+- Learned how to use spread operators on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
+
+- understood the difference between JavaScript ES5 & ES6 thanks to this article by [Jay Sridhar](https://www.makeuseof.com/tag/es6-javascript-programmers-need-know/)
+
+- Learned about the arrow syntax in [w3schools](https://www.w3schools.com/js/js_arrow_function.asp), [sitepoint](https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/), [javascript tutorial](https://www.javascripttutorial.net/es6/javascript-arrow-function/) & following this video by [the Coding train](https://www.youtube.com/watch?v=mrYMzpbFz18)
+
+- My code was highly influenced by these tutorials
+  - By [James Q Quick tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
+  - [Pablo Monteserín](https://www.youtube.com/watch?v=OH8rPQlZ_CA)
+  - [Re-On Media](https://www.youtube.com/watch?v=J-IVrJa_k2s) & [Re-On Media](https://www.youtube.com/watch?v=bkvLa8BI9zc)
+
 - Learned how to fetch from [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
 
-- I found this very helpful: how to import json files [Amit Diwan](https://www.tutorialspoint.com/how-to-import-local-json-file-data-to-my-javascript-variable)
+- I found this very helpful: how to import json files 
+  - [Amit Diwan](https://www.tutorialspoint.com/how-to-import-local-json-file-data-to-my-javascript-variable) 
+  - [eureka! community](https://www.edureka.co/community/83684/how-to-read-an-external-local-json-file-in-javascript)
+  - [eureka! community](https://www.edureka.co/community/82336/how-to-load-local-json-file)
 
 - Although at the end I decided not to include hard coded questions, I learned how to import the json file with the help of this article [Stefan Judis](https://www.stefanjudis.com/snippets/how-to-import-json-files-in-es-modules-node-js/)
 
@@ -447,7 +461,7 @@ This project has really put my research and understanding skills to the test, bu
 
 - Followed this tutorial to help me understand the structure of the quiz [Yaphi Berhanu](https://www.sitepoint.com/simple-javascript-quiz/)
 
-- My code was highly influenced by this tutorial by [James Q Quick tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
+- Borrowed the code for the loader from [w3schools](https://www.w3schools.com/howto/howto_css_loader.asp)
 
 - Learned more about fetch from [John Linatoc](https://medium.com/@johnwadelinatoc/manipulating-the-dom-with-fetch-7bfddf9c526b)
 
@@ -455,11 +469,12 @@ This project has really put my research and understanding skills to the test, bu
 
 - Learned about routing and relative URL paths on [Stack Overflow](https://stackoverflow.com/questions/1655065/redirecting-to-a-relative-url-in-javascript)
 
+- Fixed my first json file following this post on [Stack Overflow](https://stackoverflow.com/questions/44587340/javascript-fetch-not-reading-json-file)
+
+- This tutorial helped me with the highscore section: [Developerdrive Staff](https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/)
 
 ---
 
 ### Images
 
-- To [Jon Tyson](https://unsplash.com/@jontyson) for the picture used on the homepage taken from [unsplash](https://unsplash.com/)
-
-https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/
+- Thank you to [Jon Tyson](https://unsplash.com/@jontyson) for the picture used on the homepage found in [unsplash](https://unsplash.com/)
