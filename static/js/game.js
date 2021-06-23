@@ -3,7 +3,6 @@
 // Constants for the game
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
-const URL = "https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple"
 
 let question = document.getElementById('question');
 let choices = Array.from(document.getElementsByClassName('choice-text'));
@@ -28,7 +27,7 @@ let triviaQuestions = [];
  * if the fetched API does not respond or is not available at some point, the error message will let
  * the user know there is a problem and to try again
  */
-fetch(URL)
+fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple")
     .then((res) => {
         return res.json();
     })
@@ -86,7 +85,7 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
-        return window.location.assign("../end.html")
+        return window.location.assign("/movieQuiz/end.html")
     }
 
     //update the score dinamically as user answers questions
@@ -100,7 +99,7 @@ getNewQuestion = () => {
     question.innerHTML = currentQuestion.question;
 
     choices.forEach(choice => {
-        let number = choice.dataset['number'];
+        let number = choice.dataset.number;
         choice.innerText = currentQuestion['choice' + number];
     });
 
@@ -121,7 +120,7 @@ choices.forEach(choice => {
         //create delay before they can answer
         acceptingAnswers = false;
         let selectedChoice = e.target;
-        let selectedAnswer = selectedChoice.dataset['number'];
+        let selectedAnswer = selectedChoice.dataset.number;
 
         let classToApply =
             selectedAnswer == currentQuestion.answer ? "correct" : "incorrect";
