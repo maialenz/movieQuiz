@@ -1,3 +1,5 @@
+//the code for this game was created and written with the help of tutorials referenced on the readme file
+
 // Constants for the game
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
@@ -20,8 +22,12 @@ let availableQuestions = [];
 
 let triviaQuestions = [];
 
-
-//fetch questions from the open API
+/**
+ * This function fetches the code from the open API, stores the questions in a variable
+ * and iterates through them to get the question and answer choices from the json file.
+ * if the fetched API does not respond or is not available at some point, the error message will let
+ * the user know there is a problem and to try again
+ */
 fetch(URL)
     .then((res) => {
         return res.json();
@@ -53,7 +59,11 @@ fetch(URL)
         console.error(err);
     });
 
-
+ /**
+ * This function calls the function created on the promise and starts the game.
+ * It resets the question counter to 0, in case it doesn't work automatically and it It sets the score to 0
+ * It adds the class hidden to the loader div if the question is taking time loading so the user can see it.
+ */
 startQuiz = () => {
     questionCounter = 0;
     score = 0;
@@ -66,15 +76,17 @@ startQuiz = () => {
 
 };
 
-getNewQuestion = () => {
+/**
+ * if the user answers all questions available --> bring them to the score page
+ * store scores inputed by user to access them on end page
+ */
 
-    //if the user answers all questions available --> bring them to the score page
-    //store scores inputed by user to access them on end page
+getNewQuestion = () => {
 
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
-        return window.location.assign("movieQuiz/end.html")
+        return window.location.assign("../end.html")
     }
 
     //update the score dinamically as user answers questions
@@ -97,8 +109,11 @@ getNewQuestion = () => {
     acceptingAnswers = true;
 };
 
-//initialize the questions
-//Event Listener for selecting answers
+/** 
+ * initialize the questions.
+ * Event Listener for selecting answers.
+ */
+
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if (!acceptingAnswers) return;
