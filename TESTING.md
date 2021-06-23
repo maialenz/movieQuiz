@@ -18,8 +18,7 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
 ## Table of Content
 
 1. [USER STORIES](#user-stories-testing)
-2. [FAVICON TEST](#favicon-test)
-3. [VALIDATOR CHECKS](#validator)
+2. [VALIDATOR CHECKS](#validator)
    - [HTML](#html-validator)
      - Index.html
      - Game.html
@@ -29,16 +28,74 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
      - game.css
      - highscore.css
    - [JSHint](#jshint-validator)
-4. [LIGHTHOUSE TESTING](#lighthouse-testing)
+3. [LIGHTHOUSE TESTING](#lighthouse-testing)
    - Mobile
    - Web
-5. [DEVICE RESPONSIVENESS](#device-responsiveness)
-6. [BROWSER COMPATIBILITY](#browser-compatibility)
-7. [BUGS](#bugs)
-8. [KNOWN BUGS](#known-bugs)
-9. [BACK TO README.md](README.md)
+4. [DEVICE RESPONSIVENESS](#device-responsiveness)
+5. [BROWSER COMPATIBILITY](#browser-compatibility)
+6. [BUGS](#bugs)
+7. [KNOWN BUGS](#known-bugs)
+8. [BACK TO README.md](README.md)
 
 ## USER STORIES TESTING
+
+### **User stories**
+
+- Be able to have the game rules available:
+    - This is posible thanks to a large clickable button on the main page in the control panel. 
+    ![screenshot of location of the button to open Modal containing game rules](docs/testing/user-stories/RulesModal-button.png)
+
+    - The user can easily see and find the button and when clicked on it, the modal including the rules to the game opens over the homepage. 
+    ![screenshot of the opened Rules Modal](docs/testing/user-stories/opened-modal.png)
+
+    - The user will be able to close the Rules window two ways: 
+        - the x to close situated on the top of the Modal window
+        - A button to close the Modal with the text 'Understood' to hint the user to click over it (this button hovers to hint the user to click over it)
+    ![screenshot of the two ways to close the Rules Modal highlighted on yellow](docs/testing/user-stories/close-modal.png)
+
+- Be able to start the quiz by clicking a single button:
+    - As the Game rules, the user can easily find the Start button at the bottom of the screen, just below the hero image. The text inside the button has been capitalized to catch the user's eye and the arrow icons make it more visible. The button glows in a darker color when hovered over.
+    ![screenshot of the start again button on the homepage](docs/testing/user-stories/start-quiz.png)
+
+    - If the user wants to retake the quiz once they have finished it without going back to the homepage, they can do it so by clicking over the Play again button. The button glows in a darker color when hovered over.
+    ![screenshot of the play again button at the end of the quiz](docs/testing/user-stories/play-again-btn.png)
+
+- Be able to choose my answer from a multiple choice answer to each question.
+    - Each question has four options for the user to choose. They will be able to hover over the answers and in this release there is no timer so the user won't be preasured to make a choice
+    ![screenshot of the multiple choice answers](docs/testing/user-stories/multiple-choice.png)
+
+    - The question will load automatically once the user has answered the question
+    - The answer chosen by the user will turn on red if the anwer to the question is incorrect. If the answer is correct, the answer will turn on green.
+    ![screenshot of a wrong answer](docs/testing/user-stories/incorrect.png)
+    ![screenshot of a correct asnwer](docs/testing/user-stories/corrects.png)
+
+    - If the the loading of the fetched API questions take longer than usual, the user will be notified that the questions are loading with the representation of a loader
+    ![screenshot of a wrong answer](docs/testing/user-stories/loader.png)
+
+- See my score as I progress through the game:
+    - The score count is situated on the top right, just above the question, so the user can easily identify the score count. 
+    - To make it easy to understand, the score count has the word 'Score' on it.
+    - When the user answers the question correctly, the score counter will increase by 10 points, the maximum possible of points being 100.
+    ![screenshot of score counter](docs/testing/user-stories/score-counter.png)
+    ![screenshot of maximum score](docs/testing/user-stories/max-score.png)
+
+    - The user has the posibility to save the score by inputing their alias and clicking on 'Save'. The save button is disabled until the user starts typing on the input area. The top 5 highest scores will be saved on the High Score section. The user can see these by clicking on High Scores button on the main page.
+    ![screenshot of save score input and button areas](docs/testing/user-stories/save-score.png)
+    ![screenshot of stop scores](docs/testing/user-stories/top-score.png)
+    ![screenshot of high score button on the homepage](docs/testing/user-stories/high-score-btn.png)
+
+- Know which question I am currently on
+    - The user can see the question they are currently answering on the top left corner, just above the question. 
+    - To make it visually more appealing, the user can also see their progress on a progress bar. As the user answers questions, this bar will fill according to the amount of questions the user has answered.
+    ![screenshot of the current question tracker and progress bar](docs/testing/user-stories/question-tracker.png)
+
+- Get a feedback with the total score and the option to retake the quiz or go to the main menu.
+    - The user can see their total as they are answering the questions. At the end of the quiz, they will be shown the total points they received from the correct answers.
+    ![screenshot of the total score area](docs/testing/user-stories/total-score.png)
+    - On the end page the user can decide if they want to retake the quiz again or they want to go back home. If the user clicks on Play again, the trivia will restart immediately. If the users clicks on Back Home, they will be taken back to the main page
+    ![screenshot of the end control buttons](docs/testing/user-stories/end-controls.png)
+
+---
 
 ## VALIDATOR:
 
