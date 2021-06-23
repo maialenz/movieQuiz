@@ -326,6 +326,8 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 Find the Testing document [here](TESTING.md)
 
+---
+
 ## DEPLOYMENT
 
 ### GitHub Pages
@@ -465,8 +467,6 @@ This project has really put my research and understanding skills to the test, bu
 
 - Learned more about fetch from [John Linatoc](https://medium.com/@johnwadelinatoc/manipulating-the-dom-with-fetch-7bfddf9c526b)
 
-- Borrowed idea for how to remove hover on touch devices from [Stefan Judis](https://www.stefanjudis.com/today-i-learned/the-hover-media-query-can-help-to-remove-hover-styles-on-touch/)
-
 - Learned about routing and relative URL paths on [Stack Overflow](https://stackoverflow.com/questions/1655065/redirecting-to-a-relative-url-in-javascript)
 
 - Fixed my first json file following this post on [Stack Overflow](https://stackoverflow.com/questions/44587340/javascript-fetch-not-reading-json-file)
@@ -478,3 +478,15 @@ This project has really put my research and understanding skills to the test, bu
 ### Images
 
 - Thank you to [Jon Tyson](https://unsplash.com/@jontyson) for the picture used on the homepage found in [unsplash](https://unsplash.com/)
+
+## ACKNOWLEDGEMENTS
+
+- To my mentor Rohit Sharma for all the time spent on giving me tips, advise, suggestions and sharing your great knowledge to make sure I did not panic when the project became very confused and I was lost.
+
+- To Scott from Tutor support for helping me getting my ideas straight and giving me documentation to read to understand how to iterate through json files.
+
+- To my partner for the time spend thorougly testing my game and being next to me on all those difficult times while creating this projects.
+
+---
+
+Project created by **Maialen Zumeta** | Ireland, June 2021
