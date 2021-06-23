@@ -202,35 +202,38 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 - The site will consist of four pages: homepage, the game page, the end page and the highscores page. Based on the user selection, the user will be taken to the respective page. The site will be responsive for most screen sizes, but it's best enjoyed on medium to large size screens.
 
+- All buttons and links will be styled with hovering effects to invite the user to click on them.
+
+- The logo will stay static along the game to give the website consistency.
+
 - **Homepage:** 
 
-  - Logo
   - Header: An area to introduce the user to the game
   - Image: to set the theme of the quiz visually
   - Controls Section: under the hero image there will be a section highlighted on another darker color with lighter buttons to point the user to the contol section:
-    - Start the game Button: 'Start' button to hint the user to click on it to Start the quiz
-    - High Score Button: a button directing the user to the top 5 scores page which are saved on the end page.
-    - A modal button which contains the instructions of the game.
+    - Start the game Button: 'Start' button to hint the user to click on it to Start the quiz. Clicking this will direct the user to the game.
+    - High Score Button: a button directing the user to the top 5 scores page which are saved on the end page. Clickin this button will direct the user to high scores page.
+    - A modal button which contains the instructions of the game. clicking this button will open a modal explaining the user the game rules.
 
 - **Game:** 
 
   - A section above the displayed question with two areas: the area on the left counts the current question with a progress bar to make the counter more appealing and easier to visually see it. The area on the right display the added score when the user answers the question correctly. 
-  - There will be 10 questions on display. The questions have been created thanks to the use of an open Trivia API. They load auto
+  - There will be 10 questions on display. The questions have been created thanks to the use of an [open Trivia API](https://opentdb.com/). 
+  - If the API fails to load, the user will be presented with an error message prompting them to reload the page and try again.
   - The user will be given 4 multiple choice answers. The user has to click on the answer. The answer will turn red or green depending if the answer is correct or incorrect. The user won't be able to see right answer if the choice is incorrect, as the intention is to be able to retake the quiz and try to beat their own score,
   - The question will automatically load a second after the user has made the selection, so there will not be any buttons for the user to jump into the next question manually. This is to make the user's experience nicer, by clicking less.
     
 - **End:** This will be the feedback page.
-    - There will be a section with the score summary, which will be updated as the user answers correct questions. As each question is 10 points the maximum amount of points the user can get is 100 points.
-    - The save button will be disabled until the user starts typing on the input area. When the input is filled the save button will be active.
-    - Under the score there will be a input gap whith username as a placeholder where the user will be able to input their name and save it. The top 5 saved scores will be shown on the Highscore page accessible from a button placed on the homepage
-    - Two call to action buttons with color changing hover feature allowing the user to return to the main page or to retake the same quiz .
+  - There will be a section with the score summary, which will be updated as the user answers correct questions. As each question is 10 points the maximum amount of points the user can get is 100 points.
+  - The save button will be disabled until the user starts typing on the input area. When the input is filled the save button will be active.
+  - Under the score there will be a input gap whith username as a placeholder where the user will be able to input their name and save it. The top 5 saved scores will be shown on the Highscore page accessible from a button placed on the homepage
+  - Two call to action buttons with color changing hover feature allowing the user to return to the main page or to retake the same quiz .
 
- 
 ---
 
 ### Features left to implement
 
-- The option to choose a theme or characted: although this was part of the first planning, the implementation of the API created the issue of separating the available questions on themes, as this particular API does not separate the available film questions on different categories or themes. I decided to leave this feature for future releases because the implementation of this would mean that I would have to change the main subject of the trivia. In future releases it is expected to change the main subject of the trivia from 'Movie Quiz/Trivia' to 'Ultimate Trivia' with the posibility of choosing themes/categories and selecting the subject that the user would like to be quized on.
+- The option to choose a theme or category: although this was part of the first planning, the implementation of the API created the issue of separating the available questions on themes, as this particular API does not separate the available film questions on different categories or themes. I decided to leave this feature for future releases because the implementation of this would mean that I would have to change the main subject of the trivia. In future releases it is expected to change the main subject of the trivia from 'Movie Quiz/Trivia' to 'Ultimate Trivia' with the posibility of choosing themes/categories and selecting the subject that the user would like to be quized on.
 
 - The posibility of choosing different difficulty: in the first release, there won't be any option to select the difficulty and complexity of the questions, but in a future release there would be three different options for the user to select (easy, medium, hard)
 
@@ -255,6 +258,75 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 - Markdown (for README.md, REFERENCES.md and TESTING.md)
 - JavaScript: 
   - Javascript is a lightweight, interpreted, object-oriented language with first-class functions, and is best known as the scripting language for Web pages, but it's used in many non-browser environments as well.
+
+---
+
+### Frameworks, Libraries & Programs
+
+- [Balsamiq](https://balsamiq.com/) 
+  - Used to create wireframes for each website page on various devices and screen sizes.
+
+- [Font Awesome](https://fontawesome.com/)
+  - Used to display icons 
+
+- [Bootstrap](https://getbootstrap.com/) with [JQuery](https://jquery.com/)
+  - was used for responsiveness using the grid system
+  - jQuery was used alongside the Bootstrap library to create the rules modal.
+
+- [Google Fonts](https://fonts.google.com/)
+  - Used to import the two fonts used throughout the site 'Quicksand' and 'Montserrat Alternates'.
+
+- [Hover.css](https://ianlunn.github.io/Hover/)
+  - A library with ready to use hover effects. It was used for all the links and buttons. The effect used was hover glow.
+
+- [GitHub](https://github.com/)
+  - Used to host the entire repository for the project.
+
+- [GitHub Pages](https://pages.github.com/)
+  - Used to host the live version of the website.
+
+- [GitPod](https://www.gitpod.io/)
+  - The code editor used to build the entire project.
+
+- [TinyPNG](https://tinypng.com/)
+  - Used this to compress the image used on the website to decrease the file size.
+
+- [Favicon](https://favicon.io/)
+  - Used to generate the websites favicon logo of various sizes for different devices.
+
+- [Am I Responsive](http://ami.responsivedesign.is/)
+  - A tool to check how the website appears and the functionality on various devices. The mockups on this document was generated with this tool.
+
+- [Responsinator]()
+  - Similar to Am I responsive this is a web based application that allows a website to be checked an a large amount of devices in portrait and landscape view.
+
+- [W3C Validator HTML](https://validator.w3.org/) & [W3C Validator CSS](https://jigsaw.w3.org/css-validator/)
+  - Both of these were used to test all the code for the project whilst working and for the finished website to check for valid HTML and CSS.
+
+- [JSHint](https://jshint.com/)
+  - This is a tool used to detect errors or potential problems within Javascript code, it was used to test and validate all Javascript written for this project.
+
+- [BrowserStack]()
+  - This application was used to test the functionality and appearance of the project on all main browsers.
+
+- [Unsplash](https://unsplash.com/)
+  - used to get good quality pictures used as hero images and gallery
+
+- w3schools
+  - used to refresh the lessons learned in the course in a summed up way
+
+- Stack overflow
+  -to find solutions to problems and bugs I encounter during the creation of the website
+
+- [Canva](https://www.canva.com/)
+  - used to create the logo image
+---
+
+## TESTING 
+
+Find the Testing document [here](TESTING.md)
+
+## DEPLOYMENT
 
 ## REFERENCESS
 
