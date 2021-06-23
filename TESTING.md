@@ -22,9 +22,13 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
 3. [VALIDATOR CHECKS](#validator)
    - [HTML](#html-validator)
      - Index.html
-     - Services.html
-     - Contact.html
+     - Game.html
+     - End.html
    - [CSS](#css-validator)
+     - style.css
+     - game.css
+     - highscore.css
+   - [JSHint](#JsHint-validator)
 4. [LIGHTHOUSE TESTING](#lighthouse-testing)
    - Mobile
    - Web
@@ -64,7 +68,30 @@ END.html:
 
 - Line 52: Warning: Empty heading.
     - Placed some text which will replace by the js end function.
-    
+
+---
+
+HTML VALIDATOR RESULTS
+
+- [Index.html Validator result](docs/testing/validator/index.html-w3-pass.png)
+
+- [Game.html Validator result](docs/testing/validator/game.html-w3-pass.png)
+
+- [End.html Validator result](docs/testing/validator/end.html-w3-pass.png)
+
+- [Highscore.html Validator result](docs/testing/validator/highscores.html-w3-pass.png)
+
+---
+
+### CSS VALIDATOR
+
+Results for CSS validator check:
+
+- [Style.css Validator result](docs/testing/validator/style-css-validator-pass.png)
+- [Game.css Validator result](docs/testing/validator/game-css-validator-pass.png)
+- [Highscores.css Validator result](docs/testing/validator/highscores-css-validator-pass.png)
+
+
 bug --> footer middle of the page --> removed it, didnt need for quiz game
 
 bug --> when selecting answers all answers would come out as incorrect
