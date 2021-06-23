@@ -28,7 +28,7 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
      - style.css
      - game.css
      - highscore.css
-   - [JSHint](#JsHint-validator)
+   - [JSHint](#jshint-validator)
 4. [LIGHTHOUSE TESTING](#lighthouse-testing)
    - Mobile
    - Web
@@ -91,8 +91,23 @@ Results for CSS validator check:
 - [Game.css Validator result](docs/testing/validator/game-css-validator-pass.png)
 - [Highscores.css Validator result](docs/testing/validator/highscores-css-validator-pass.png)
 
+---
 
-bug --> footer middle of the page --> removed it, didnt need for quiz game
+### JSHINT
+
+- [End.js JSHint Validator](docs/testing/validator/end-jshint-validator.png)
+    - Due to the use of arrow syntax, jshint considers saveHighScore funtion a variable. This is a function.
+    - Removed unused variable MAX_HIGH_SCORES
+    - Line 43: "Did you mean to return a conditional instead of an assignment?"
+        - As this piece of code was not written by me and was introduced to fix an issue on the paths between github and gitpod, I decided to leave this warning untouched.
+
+- [game.js JSHint Validator](docs/testing/validator/game-jshint-validator.png)
+    - Line 93:  "Did you mean to return a conditional instead of an assignment?"
+        - As this piece of code was not written by me and was introduced to fix an issue on the paths between github and gitpod, I decided to leave this warning unchanged.
+    - Due to the use of arrow syntax, jshint considers startQuiz, getNewQuestion and incrementScore funtions variables. This functions are called using the arrow syntax. The repetition on the warnings is because JSHint has considered the callback functions variables too.
+
+- [Highscores.js JSHint Validator](docs/testing/validator/highscore-jshint-validator.png)
+    - No warning were found on this file
 
 bug --> when selecting answers all answers would come out as incorrect
 noticed i was using .answer to target answerss inside the function but in the questions array I had the right answer defined as correctAnswer
