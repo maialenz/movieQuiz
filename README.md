@@ -328,6 +328,33 @@ Find the Testing document [here](TESTING.md)
 
 ## DEPLOYMENT
 
+### GitHub Pages
+
+This project was built using the [GitPod](https://www.gitpod.io) environment, specifically in the cloud
+
+1. To start using the new environment, first a new repository was created in GitHub called [movieQuiz](https://github.com/maialenz/movieQuiz)
+2. All the commits and pushes made during the building process were made very often to keep the project save and updated.
+
+The project was deployed using [GitHub Pages](https://pages.github.com/) using the following steps:
+
+1. Log in to [GitHub](https://github.com/join/get-started) and locate the [GitHub repository](https://github.com/maialenz/movieQuiz)
+
+   - You can also find it by seaching maialenz/movieQuiz on the [GitHub](https://github.com/) seach-bar.
+
+2. Below the repository title at the top, find the "Settings" button on the horizontal or dropdown (small screens) menu
+
+![screenshot of the repository outlining the settings button in yellow](docs/deployment/githubsettings.png)
+
+3. Scroll down the Settings page until you locate the "GitHub Pages" section.
+
+4. Under the "Source" title, click on the dropdown button called "None" and change the source to "Master Branch".
+   ![screenshot of the dropdown menu showing the "Main Branch" and "None"](docs/deployment/githubpagesbranch.png)
+
+5. The page will automatically refresh
+
+6. When the loading is finished, scroll back down to the GitHub pages section where you will find the deployed [link](https://maialenz.github.io/movieQuiz/) to the website.
+   ![Screenshot of the deployed link within GitHub pages](docs/deployment/githubdeployedlink.png)
+
 ## REFERENCESS
 
 https://www.developerdrive.com/html5-javascript-gem-game-with-saved-scoreboard/
