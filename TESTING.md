@@ -30,7 +30,7 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
    - [JSHint](#jshint-validator)
 3. [LIGHTHOUSE TESTING](#lighthouse-testing)
    - Mobile
-   - Web
+   - Desktop
 4. [DEVICE RESPONSIVENESS](#device-responsiveness)
 5. [BROWSER COMPATIBILITY](#browser-compatibility)
 6. [BUGS](#bugs)
@@ -165,6 +165,35 @@ Results for CSS validator check:
 
 - [Highscores.js JSHint Validator](docs/testing/validator/highscore-jshint-validator.png)
     - No warning were found on this file
+
+---
+
+## LIGHTHOUSE TESTING
+
+Using DevTool's Lighthouse tool, I checked all pages on mobile and desktop to make sure the scores were as high as I posibly could. Below can be found the results and scores the tests tests
+
+(All tests were carried out the same way: I cleared cache data, opened new incognito page (Chrome and Edge), and reloaded and tested each page twice. Same procedure was used for mobile and web assessment)
+
+Due to the simplicity of the game, the results of the lighthouse testing have come back very strong. Since there is very few heavy files, the site loads very fast and with no major issues, both on mobile and desktop, increasing like this the UX.
+
+- **Mobile**
+
+  - [Index.html Lighthouse test:](docs/testing/lighthouse/lighthouse-index-mobile.png)
+  - [Game.html Lighthouse test:](docs/testing/lighthouse/lighthouse-game-mobile.png)
+  - [End.html Lighthouse test:](docs/testing/lighthouse/lighthouse-end-mobile.png)
+  - [Highscores.html Lighthouse test:](docs/testing/lighthouse/lighthouse-highscores-mobile.png)
+
+- **Desktop**
+
+  - [Index.html Lighthouse test:](docs/testing/lighthouse/lighthouse-index-desktop.png)
+  - [Game.html Lighthouse test:](docs/testing/lighthouse/lighthouse-game-desktop.png)
+  - [End.html Lighthouse test:](docs/testing/lighthouse/lighthouse-end-desktop.png)
+  - [Highscores.html Lighthouse test:](docs/testing/lighthouse/lighthouse-highscores-desktop.png)
+
+
+
+
+
 
 bug --> when selecting answers all answers would come out as incorrect
 noticed i was using .answer to target answerss inside the function but in the questions array I had the right answer defined as correctAnswer
