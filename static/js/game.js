@@ -87,12 +87,9 @@ getNewQuestion = () => {
         //go to the end page
 
         let url = window.location.protocol + "//" + window.location.host + "/"
-        
         if (window.location.href.includes('github')) url += 'movieQuiz/end.html'
         else url += 'end.html';
-
         return window.location.href = url;
-        // return window.location.href = window.location.href + 'end.html';
     }
 
     //update the score dinamically as user answers questions

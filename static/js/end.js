@@ -35,5 +35,8 @@ saveHighScore = (e) => {
     highScores.splice(5);
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.href = '/';
+    let url = window.location.protocol + "//" + window.location.host + "/"
+    if (window.location.href.includes('github')) url += 'movieQuiz/highscores.html'
+    else url += 'highscores.html';
+    return window.location.href = url;
 };
