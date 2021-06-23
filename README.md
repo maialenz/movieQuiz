@@ -395,6 +395,35 @@ It is posible to copy and edit this project by any user without changing the rep
 5. If you use GitHub desktop follow the steps documented [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
 
 
+#### Gitpod workspace after copying the HTTPS clone link
+
+1. Change the current working directory to the location where you want the cloned directory to be made.
+
+2. In the terminal type `git clone` and then paste the URL copied on step 3
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+
+3. Press Enter. This will create your local clone.
+
+```
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+
+4. To open a preview port within your own local workspace type within gitpod, enter the following command on the terminal:
+
+```
+$ python3 -m http.server
+```
+
+5. Once your Gitpod workspace is created, only open the workspace from Gitpod Workspaces itslef (https://gitpod.io/workspaces/), and not from GitHub Gitpod button (Only use this button once at the very begining when creating a new workspace)
+   ![screenshot of opening gitwork workspace](docs/deployment/gitpod-workspace-open.png)
 
 ---
 
