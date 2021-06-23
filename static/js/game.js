@@ -85,7 +85,14 @@ getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //go to the end page
-        return window.location.href = window.location.href + 'end.html';
+
+        let url = window.location.protocol + "//" + window.location.host + "/"
+        
+        if (window.location.href.includes('github')) url += 'movieQuiz/end.html'
+        else url += 'end.html';
+
+        return window.location.href = url;
+        // return window.location.href = window.location.href + 'end.html';
     }
 
     //update the score dinamically as user answers questions
