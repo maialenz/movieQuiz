@@ -130,7 +130,6 @@ form input {
 #saveScore {
   background-color: rgba(87, 15, 55, 0.4);
   font-weight: 400;
-  position: center;
   height: 3rem;
   width: 10rem;
 }
@@ -139,7 +138,6 @@ a#goHome,
 a#restartGame {
   background-color: rgba(87, 15, 55, 0.4);
   font-weight: 400;
-  position: center;
   width: 20rem;
   overflow: hidden;
 }

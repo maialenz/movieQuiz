@@ -48,7 +48,7 @@ h1#finalScore {
     .high-score {
         font-size: 1.3rem;
         font-weight: 400;
-        margin-bottom: 2rem 2rem;
+        margin-bottom: 2rem;
     }
 
     #highScoresList {
