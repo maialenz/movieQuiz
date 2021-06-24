@@ -1,5 +1,3 @@
-const MAX_HIGH_SCORES = 5;
-
 let username = document.getElementById('username');
 let saveScoreBtn = document.getElementById('saveScore');
 let finalScore = document.getElementById('finalScore');
@@ -13,7 +11,7 @@ finalScore.innerText = mostRecentScore;
 //funtion to disable the Save button until the user starts typing
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
-})
+});
 
 /**
  * function to save the high score when the onclick event is triggered on the end page
@@ -36,8 +34,8 @@ saveHighScore = (e) => {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
     // code written based on the code written by Sean from tutor support to help fix URL issue
-    let url = window.location.protocol + "//" + window.location.host + "/"
-    if (window.location.href.includes('github')) url += 'movieQuiz/highscores.html'
+    let url = window.location.protocol + "//" + window.location.host + "/";
+    if (window.location.href.includes('github')) url += 'movieQuiz/highscores.html';
     else url += 'highscores.html';
     return window.location.href = url;
 };

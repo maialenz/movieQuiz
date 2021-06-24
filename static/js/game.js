@@ -87,8 +87,8 @@ getNewQuestion = () => {
         //go to the end page
 
         // code written by Sean from tutor support to help fix path and Url 404 issues
-        let url = window.location.protocol + "//" + window.location.host + "/"
-        if (window.location.href.includes('github')) url += 'movieQuiz/end.html'
+        let url = window.location.protocol + "//" + window.location.host + "/";
+        if (window.location.href.includes('github')) url += 'movieQuiz/end.html';
         else url += 'end.html';
         return window.location.href = url;
     }
@@ -151,5 +151,5 @@ choices.forEach(choice => {
 incrementScore = num => {
     score += num;
     scoreText.innerHTML = score;
-}
+};
 
