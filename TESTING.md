@@ -34,8 +34,7 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
 4. [DEVICE RESPONSIVENESS](#device-responsiveness)
 5. [BROWSER COMPATIBILITY](#browser-compatibility)
 6. [BUGS](#bugs)
-7. [KNOWN BUGS](#known-bugs)
-8. [BACK TO README.md](README.md)
+7. [BACK TO README.md](README.md)
 
 ## USER STORIES TESTING
 
@@ -194,6 +193,16 @@ Due to the simplicity of the game, the results of the lighthouse testing have co
 
 ## DEVICE RESPONSIVENESS
 
+I continuously tested the project on various devices from the very beginning. I mostly used Google Chrome DevTools, but as soon as I deployed the website (using GitHub Pages) I pushed my code very often to see the results of the changes in real time on my own personal devices (Samsung S8+, HP Envy 13", Samsung 5Se Tablet) and make sure the site was responsive on various viewports.
+
+Apart from that, I used an online app by [Media Genesis](https://responsivedesignchecker.com/) as well as Google Chrome Developer tools to check responsiveness on those screens I did not have access to. The results of these testings are below (screenshots were taken of every decive available on DevTools and all pngs were combined together on a pdf).
+
+- [Index mobile Test Results](docs/testing/device+browser-tests/index-DevTool-test.pdf)
+- [Game mobile Test Results](docs/testing/device+browser-tests/game-DevTools-tests.pdf)
+- [Highscores mobile Test Results](docs/testing/device+browser-tests/highscores-DevTools-tests.pdf)
+- [End mobile Test Results](docs/testing/device+browser-tests/end-DevTools-tests.pdf)
+
+Most phones share screen sizes so on those I did not see many changes. Saying that, on narrow screens (for example in the Galaxy Fold with a viewport of 286x653) some margins were too large. To fix these, I added some extra css to media queries for screens with max width 415, reducing margings to fit to screen better. 
 ---
 
 ## BROWSER COMPATIBILITY
@@ -238,13 +247,28 @@ Listed are the biggest bugs that I encountered whilst building this project and 
     return window.location.href = url;
     ```
     - Thanks to Scott the issue got fixed.
----
 
-## KNOWN BUGS
-
-1. On some mobile screen sizes the form and CTA buttons are shown on the left. Using DevTools I noticed the row was wider on the left.
+7. On some mobile screen sizes, on the end page, the form and CTA buttons are shown on the left. Using DevTools I noticed the row was wider on the left.
     - I tried to set the display to block but this made the form to get fixed on the right.
-    - When I set the display to flex it fixed the display issue for most screens, but in the smallest screens like samsung galaxy the display is not centered and overflows to the left. I have not been able to find a solution to fix all the display issues without affecting the other parts of of the end.html page.
+    - I tried to set the overflow-x to none. Although this removed the scrolling, this meant that the buttons are partially lost on the right side
+    - When I set the display to flex it fixed the display issue for most screens, but in the smallest screens like samsung galaxy the display was not centered and overflowed to the left. 
+    - I was able to find a solution to fix these issues by adding some styling onto a media querie for screens with max-width of 641px:
+    ```
+    @media screen and (max-width: 641px) {
+        #end {
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        }
+    }
+  ```
+
+  8. As I tested the responsiness using the tool [Responsinator](http://www.responsinator.com/), I noticed that on small screens (specially Pixel2 and Iphone6/8) the answers' font were to big, so I included more rules into the css files to suit small viewports, specially screens with viewports below 415px.
+
+  
+  
+
+---
 
 ---
 
