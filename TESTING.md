@@ -203,9 +203,107 @@ Apart from that, I used an online app by [Media Genesis](https://responsivedesig
 - [End mobile Test Results](docs/testing/device+browser-tests/end-DevTools-tests.pdf)
 
 Most phones share screen sizes so on those I did not see many changes. Saying that, on narrow screens (for example in the Galaxy Fold with a viewport of 286x653) some margins were too large. To fix these, I added some extra css to media queries for screens with max width 415, reducing margings to fit to screen better. 
+
+```
+(Code Editors do not allow to preview PDF files, so these will have to be seen directly in [Github](https://github.com/maialenz/movieQuiz/tree/master/docs/testing/device%2Bbrowser-tests). Saying that, the Github preview does not show the images with clarity as it enlarges them, so to see the results best, download these files and use Adobe pdf reader for best results.)
+```
+
 ---
 
 ## BROWSER COMPATIBILITY
+
+I thoroughly checked on different devices and different browsers. Wherever posible I downloaded the browsers into my devices and I tested my site on them manually, making sure all links were checked and tested. 
+As a main conclusion of these tests, I have to add that I did not find any differences from one browser to another. There was full compatibility of all features and links cross browser/device. Following Mozilla documentation's, I checked if the arrow syntax was responsive on all the devices/browsers, as this is a new version of JS and it is not compatible on some browsers. But after running my manual tests, all pages did respond and was responsive as intended. 
+
+All the screenshots to my manual tests on various major devices are below:
+
+- Samsung Galaxy S8+ (My personal device) (mobile device): As mentioned before, I continuously tested my code on my own mobile device as I went writting and styling the code, so I could see how it looked on smaller screens. Thanks to testing on my phone I noticed the start button had to be made a little smaller it did not look oversized. Below there is screenshots of a last test done on this device:
+
+    - [Samsung S8+ screenshot index](docs/testing/device+browser-tests/Samsungs8+screenshot-index.jpg)
+    - [Samsung S8+ screenshot game](docs/testing/device+browser-tests/samsungs8+screenshot-game.jpg)
+    - [Samsung S8+ screenshot end](docs/testing/device+browser-tests/samsungs8+screenshot-end.jpg)
+    - [Samsung S8+ screenshot highscore](docs/testing/device+browser-tests/Samsungs8+screenshot-highscore.jpg)
+    - [Samsung S8+ screenshot of modal](docs/testing/device+browser-tests/samsungs8+screenshot-modal.jpg)
+
+
+- Samsung A70 (mobile device): I also tested the website on another mobile device:
+
+    - [Samsung A70 Screenshot index](docs/testing/device+browser-tests/SamsungA70-index.jpg)
+    - [Samsung A70 Screenshot game](docs/testing/device+browser-tests/SamsungA70-game.jpg)
+    - [Samsung A70 Screenshot highscore](docs/testing/device+browser-tests/SamsungA70-highscore.jpg)
+    - [Samsung A70 Screenshot end](docs/testing/device+browser-tests/SamsungA70-end.jpg)
+    - [Samsung A70 Screenshot modal](docs/testing/device+browser-tests/SamsungA70-modal.jpg)
+
+- Samsung S5e (tablet)
+
+  - [Galaxy Tab S5e Index](docs/testing/device+browser-tests/Galaxy-Tab-S5e-index.jpg)
+  - [Galaxy Tab S5e game](docs/testing/device+browser-tests/Galaxy-Tab-S5e-game.jpg)
+  - [Galaxy Tab S5e highscore](docs/testing/device+browser-tests/Galaxy-Tab-S5e-highscore.jpg)
+  - [Galaxy Tab S5e end](docs/testing/device+browser-tests/Galaxy-Tab-S5e-end.jpg)
+  - [Galaxy Tab S5e modal](docs/testing/device+browser-tests/Galaxy-Tab-S5e-modal.jpg)
+
+- HP Envy 13" (laptop)
+
+    - Google Chrome (browser)
+
+        - [HP Envy index screenshot](docs/testing/device+browser-tests/HP-envy-index.png)
+        - [HP Envy game screenshot](docs/testing/device+browser-tests/HP-envy-game.png)
+        - [HP Envy highscores screenshot](docs/testing/device+browser-tests/HP-envy-highscores.png)
+        - [HP Envy end screenshot](docs/testing/device+browser-tests/HP-envy-end.png)
+        - [HP Envy modal screenshot](docs/testing/device+browser-tests/HP-envy-modal.png)
+   
+    - Mozilla Firefox (browser): 
+
+        - [HP Envy Mozilla index screenshot](docs/testing/device+browser-tests/hp-mozilla-index.png)
+        - [HP Envy Mozilla game screenshot](docs/testing/device+browser-tests/hp-mozilla-game.png)
+        - [HP Envy Mozilla highscores screenshot](docs/testing/device+browser-tests/hp-mozilla-highscores.png)
+        - [HP Envy Mozilla end screenshot](docs/testing/device+browser-tests/hp-mozilla-end.png)
+        - [HP Envy Mozilla modal screenshot](docs/testing/device+browser-tests/hp-mozilla-modal.png)
+
+    - Microsoft Edge (brower)
+
+        - [HP Envy Edge index screenshot](docs/testing/device+browser-tests/edge-hp-index.png)
+        - [HP Envy Edge game screenshot](docs/testing/device+browser-tests/edge-hp-game.png)
+        - [HP Envy Edge highscore screenshot](docs/testing/device+browser-tests/edge-hp-highscores.png)
+        - [HP Envy Edge end screenshot](docs/testing/device+browser-tests/edge-hp-end.png)
+        - [HP Envy Edge modal screenshot](docs/testing/device+browser-tests/edge-hp-modal.png)
+
+    - Opera (browser) 
+
+        - [HP Envy Opera index screenshot](docs/testing/device+browser-tests/Opera-HP-index.png)
+        - [HP Envy Opera game screenshot](docs/testing/device+browser-tests/Opera-HP-game.png)
+        - [HP Envy Opera highscore screenshot](docs/testing/device+browser-tests/Opera-HP-highscore.png)
+        - [HP Envy Opera end screenshot](docs/testing/device+browser-tests/Opera-HP-end.png)
+        - [HP Envy Opera modal screenshot](docs/testing/device+browser-tests/Opera-HP-modal.png)
+
+- PC HP desktop 31.5" screen
+
+    - Google Chrome (browser)
+
+        - [HP Desktop index screenshot](docs/testing/device+browser-tests/hp-desktop-chrome-index.png)
+        - [HP Desktop game screenshot](docs/testing/device+browser-tests/hp-desktop-chrome-game.png)
+        - [HP Desktop highscore screenshot](docs/testing/device+browser-tests/hp-desktop-chrome-highscore.png)
+        - [HP Desktop end screenshot](docs/testing/device+browser-tests/hp-desktop-chrome-end.png)
+        - [HP Desktop modal screenshot](docs/testing/device+browser-tests/hp-desktop-chrome-modal.png)
+
+    - Microsoft Edge (browser)
+
+        - [HP Desktop index screenshot](docs/testing/device+browser-tests/hp-desktop-edge-index.png)
+        - [HP Desktop game screenshot](docs/testing/device+browser-tests/hp-desktop-edge-game.png)
+        - [HP Desktop highscore screenshot](docs/testing/device+browser-tests/hp-desktop-edge-highscore.png)
+        - [HP Desktop end screenshot](docs/testing/device+browser-tests/hp-desktop-edge-end.png)
+        - [HP Desktop modal screenshot](docs/testing/device+browser-tests/hp-desktop-edge-modal.png)
+
+- MacOs operating system tested on Safari browser: as I did not have any devices with MacOs operating system, I used [BrowserStack](https://www.browserstack.com/) to test the site on safari. Although is not as acurate as an Apple device, it helped me to see there was no issues in compatibility with a Safari browser.
+
+    - Safari (browswer)
+        
+        - [Safari index screenshot](docs/testing/device+browser-tests/MAC-emulator-index.jpeg)
+        - [Safari game screenshot](docs/testing/device+browser-tests/MAC-emulator-game.jpeg)
+        - [Safari highscore screenshot](docs/testing/device+browser-tests/MAC-emulator-highscore.jpeg)
+        - [Safari end screenshot](docs/testing/device+browser-tests/MAC-emulator-end.jpeg)
+        - [Safari modal screenshot](docs/testing/device+browser-tests/MAC-emulator-modal.jpeg)
+
 ---
 
 ## FURTHER TESTING
