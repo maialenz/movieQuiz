@@ -190,10 +190,66 @@ Due to the simplicity of the game, the results of the lighthouse testing have co
   - [End.html Lighthouse test:](docs/testing/lighthouse/lighthouse-end-desktop.png)
   - [Highscores.html Lighthouse test:](docs/testing/lighthouse/lighthouse-highscores-desktop.png)
 
+--
 
+## DEVICE RESPONSIVENESS
 
+---
 
+## BROWSER COMPATIBILITY
+---
 
+## FURTHER TESTING
+---
 
-bug --> when selecting answers all answers would come out as incorrect
-noticed i was using .answer to target answerss inside the function but in the questions array I had the right answer defined as correctAnswer
+## BUGS
+
+Listed are the biggest bugs that I encountered whilst building this project and what I did to fix them:
+
+1. When selecting answers all answers would come out as incorrect:
+    - noticed i was using .answer to target answers inside the function but in the questions array I had the right answer defined as correctAnswer
+    - I changed the correctAnswer key for answer on the json file
+    - This was later changed for an API so it did not affect the finished page
+
+2. Image in smaller screens showed only the left corner
+    - I tried to set the image to left but the white on the edges was too large
+    - I cut the image so the white on the sides wouldn't be the only thing shown in smaller screens
+    - Althought this improved the look of the website, the best performance is on a medium screen.
+
+3. error Message class hidden not working
+    - fixed this styling the hidden class on the game.css and setting the display to none.
+
+4. Console error shows: "Uncaught TypeError: Cannot read property 'currentQuestions' of null”
+    - removed scripts from the files that they did not belonged to: removed end.js from game.html, removed the highscore.js and game.js from index.html.
+    - this fixed the issue and the console does not show any more errors.
+
+5. The logo pixelated on XL display
+    - I added a media querie for minimum width of 800px and set the logo to 40%. This keeps the image on the right size on XL diplays like large Desktop screens.
+
+6. When I merged the last branch, the deployed version on github and gitpod differed on the root. As I finished tyding and started testing the site, I noticed that the end.js would not be triggered at the end of the game.html and I got a 404 error from the deployed version. 
+    - Following my mentor's advice, to fix the issue on the URL, I added /movieQuiz/end.js on the window.location.assign. 
+    - Although this fixed the issue with the end page, I noticed all the other buttons and paths to the other pages (highescores.js) broke. 
+    - I contacted Student Support and Sean helped me fix the issue. 
+    - He checked for issues and he noticed the root of my workspace on my Editor and in Github were different, so he gave me a solution to fix this error: 
+    ```
+    let url = window.location.protocol + "//" + window.location.host + "/";
+    if (window.location.href.includes('github')) url += 'movieQuiz/highscores.html';
+    else url += 'highscores.html';
+    return window.location.href = url;
+    ```
+    - Thanks to Scott the issue got fixed.
+---
+
+## KNOWN BUGS
+
+1. On some mobile screen sizes the form and CTA buttons are shown on the left. Using DevTools I noticed the row was wider on the left.
+    - I tried to set the display to block but this made the form to get fixed on the right.
+    - When I set the display to flex it fixed the display issue for most screens, but in the smallest screens like samsung galaxy the display is not centered and overflows to the left. I have not been able to find a solution to fix all the display issues without affecting the other parts of of the end.html page.
+
+---
+
+---
+
+## <center> Back to [README.md](README.md)
+
+---
