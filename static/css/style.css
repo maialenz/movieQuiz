@@ -198,20 +198,17 @@ input::placeholder {
 /*--- media querie for responsiveness of logo on small screens---*/
 @media screen and (max-width: 400px) {
   
+  
   #score-header {
     font-size: 1.5rem!important;
   }
 
   #homepage.border {
-    padding: 20px;
+    padding: 10px!important;
+    margin: 10px!important;
   }
-
   .wrapper {
     margin: 0;
-  }
-
-  .hud-prefix {
-    font-size: 0.7rem;
   }
 
   a#goHome, a#restartGame {
