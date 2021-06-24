@@ -44,7 +44,7 @@ h1#finalScore {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
 
     .wrapper {
         margin: 3rem 1.75rem;
