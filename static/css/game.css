@@ -184,6 +184,10 @@ h2#question {
 }
 
 @media screen and (max-width: 450px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .wrapper {
         background-color: rgba(173, 169, 183, 0.7);
         margin: 1rem 1rem;
@@ -201,7 +205,10 @@ h2#question {
     }
 
     .choice-container {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    .choice-text {
+        padding: 0.6rem;
     }
 
     .h2, h2 {
@@ -220,5 +227,7 @@ h2#question {
 
 }
 @media screen and (max-width: 650px) {
-
+    body {
+        overflow-x: hidden;
+    }
 }
