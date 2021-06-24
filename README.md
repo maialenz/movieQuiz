@@ -69,7 +69,7 @@ The website will be responsive and accessible on all devices, but it's optimized
 
     - Be able to have the game rules available.
     - Be able to start the quiz by clicking a single button.
-    - Be able to choose my answer from a multiple choise answer to each question.
+    - Be able to choose my answer from a multiple choice answer to each question.
     - See my score as I progress through the game
     - Know which question I am currently on
     - Get a feedback with the total score and the option to retake the quiz or go to the main menu.
@@ -132,8 +132,6 @@ By answering the questions, the user will be able to find entertainment and enjo
 - The Start Quiz will retrieve questions from an API and it's set to easy so the user can enjoy answering the questions without the added difficulty.
 
 - If the questions take longer to load, the user will be presented with a loader as a sign that something is happening
-
-- 
 
 - The score count will be represented at the top of the page (above the footer).
 
@@ -316,10 +314,14 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
   - used to refresh the lessons learned in the course in a summed up way
 
 - Stack overflow
-  -to find solutions to problems and bugs I encounter during the creation of the website
+  -to check questions to find solutions to problems and bugs I encounter during the creation of the website
 
 - [Canva](https://www.canva.com/)
   - used to create the logo image
+
+- [CSS Autoprefixer](https://autoprefixer.github.io/)
+  - used to add vendor prefixes to the CSS used in the project to increase cross browser compatibility.
+
 ---
 
 ## TESTING 
@@ -435,6 +437,8 @@ This project has really put my research and understanding skills to the test, bu
 
 ### REFERENCES
 
+- URL path code written by Sean from Student Support. He helped me fix the issues I had with the URL between gitpod and github. (credited above the code written by Sean).
+
 - Previous to deciding to create separate pages for each game section, I learned how to fade questions from this post on [StackOverflow](https://stackoverflow.com/questions/15348725/how-to-make-quiz-questions-appear-one-at-a-time-in-javascript)
 
 - Learned how to use spread operators on [MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)
@@ -483,7 +487,9 @@ This project has really put my research and understanding skills to the test, bu
 
 - To my mentor Rohit Sharma for all the time spent on giving me tips, advise, suggestions and sharing your great knowledge to make sure I did not panic when the project became very confused and I was lost.
 
-- To Scott from Tutor support for helping me getting my ideas straight and giving me documentation to read to understand how to iterate through json files.
+- To Scott from Student support for helping me getting my ideas straight and giving me documentation to read to understand how to iterate through json files.
+
+- To Sean from Student support for helping me write the path to fix issues in URL and differences in roots between gitpod and github. All pages are working as they should thanks to him!
 
 - To my partner for the time spend thorougly testing my game and being next to me on all those difficult times while creating this projects.
 
