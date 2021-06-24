@@ -196,9 +196,12 @@ input::placeholder {
 /*------------Media Queries--------------*/
 
 /*--- media querie for responsiveness of logo on small screens---*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   
-  
+  #startBtn {
+    font-size: 0.8rem;
+  }
+
   #score-header {
     font-size: 1.5rem!important;
   }
