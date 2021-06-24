@@ -143,9 +143,18 @@ By answering the questions, the user will be able to find entertainment and enjo
 
 ### Skeleton Plane
 
-- [Mobile Wireframe](docs/wireframes/Mobile.png)
-- [Ipad Wireframe](docs/wireframes/Ipad.png)
-- [Desktop Wireframe](docs/wireframes/Desktop.png)
+When I started this project, I had the idea of hard coding the questions and separating them in three different themes. As I deployed my project very early on and asked family to check the first look/idea of the game, they recomended to add more variaty of questions as they thought it would get boring for users to play the same 10 questions over and over again.
+As I looked into other options to introduce more questions, I found an API with a large trivia database free to use, so I decided to change the first design and make changes to it. Below are the first wireframes and the new ones:
+
+- Old wireframes:
+  - [Mobile Wireframe](docs/wireframes/Mobile.png)
+  - [Ipad Wireframe](docs/wireframes/Ipad.png)
+  - [Desktop Wireframe](docs/wireframes/Desktop.png)
+
+- New wireframes:
+  - [Mobile Wireframe](docs/wireframes/New-Mobile_Small-screen.png)
+  - [Ipad Wireframe](docs/wireframes/New-Ipad-Medium-Screen.png)
+  - [Desktop Wireframe](docs/wireframes/New-Desktop.png)
 
 ## DESIGN
 
@@ -176,6 +185,7 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 - Sans-serif: used as a fallback font in cases there is an issue when importing fonts or the browser does not support these.
 
 ---
+
 ### **Imagery**
 
 
@@ -243,6 +253,8 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 - Navbar and footer: as this is a simple quiz application, it was decided not to include any navbars or footers as they were thought to be irrelevant for this first release. For future releases, as the application increases on themes/categories, difficulty... it's expected to contain a responsive navbar for better UX and easier access to subcategories and dropdown buttons. The same way, the footer would contain a email and contact information so users can contact the creator and send feedback and/or proposed questions to include on the quiz. 
 
+- A fun feedback depending on the score the user achieves. If the user does better than 20% they would get a message; a different one if they reached 50% ... This was left out of the first release for lack of time. This would be a feature on a further release.
+
 ---
 
 ## TECHNOLOGIES USED
@@ -265,7 +277,7 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
   - Used to create wireframes for each website page on various devices and screen sizes.
 
 - [Font Awesome](https://fontawesome.com/)
-  - Used to display icons 
+  - used to include inline icons as representation and support of information
 
 - [Bootstrap](https://getbootstrap.com/) with [JQuery](https://jquery.com/)
   - was used for responsiveness using the grid system
@@ -295,7 +307,7 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 - [Am I Responsive](http://ami.responsivedesign.is/)
   - A tool to check how the website appears and the functionality on various devices. The mockups on this document was generated with this tool.
 
-- [Responsinator]()
+- [Responsinator](http://www.responsinator.com/)
   - Similar to Am I responsive this is a web based application that allows a website to be checked an a large amount of devices in portrait and landscape view.
 
 - [W3C Validator HTML](https://validator.w3.org/) & [W3C Validator CSS](https://jigsaw.w3.org/css-validator/)
@@ -304,16 +316,16 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 - [JSHint](https://jshint.com/)
   - This is a tool used to detect errors or potential problems within Javascript code, it was used to test and validate all Javascript written for this project.
 
-- [BrowserStack]()
+- [BrowserStack](https://www.browserstack.com/)
   - This application was used to test the functionality and appearance of the project on all main browsers.
 
 - [Unsplash](https://unsplash.com/)
   - used to get good quality pictures used as hero images and gallery
 
-- w3schools
+- [w3schools](https://www.w3schools.com/)
   - used to refresh the lessons learned in the course in a summed up way
 
-- Stack overflow
+- [Stack overflow](https://stackoverflow.com/)
   -to check questions to find solutions to problems and bugs I encounter during the creation of the website
 
 - [Canva](https://www.canva.com/)
@@ -321,6 +333,12 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 - [CSS Autoprefixer](https://autoprefixer.github.io/)
   - used to add vendor prefixes to the CSS used in the project to increase cross browser compatibility.
+
+- [Media Genesis](https://responsivedesignchecker.com/)
+  - used to check responsiveness on different device and viewports
+
+- [Jpg2pdf](https://jpg2pdf.com/)
+  - used to combine images into a single file
 
 ---
 
@@ -398,6 +416,7 @@ It is posible to copy and edit this project by any user without changing the rep
 
 5. If you use GitHub desktop follow the steps documented [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
 
+---
 
 #### Gitpod workspace after copying the HTTPS clone link
 
@@ -433,7 +452,7 @@ $ python3 -m http.server
 ## CREDITS
 
 As this has been the first project using a new programming language like JavaScript, I found this second milestone project very challenging. Without any previous programming knowledge, I found myself using a great variaty of documentation and tutorials to revisit the lessons learnt during this module with Code Institute. 
-This project has really put my research and understanding skills to the test, but it has been a great learning curve, and all the tutorials I followed really helped with this.
+This project has really put my research and understanding skills to the test, but it has been a great learning curve, and all the tutorials I followed really helped with this. 
 
 ### REFERENCES
 
@@ -445,14 +464,23 @@ This project has really put my research and understanding skills to the test, bu
 
 - understood the difference between JavaScript ES5 & ES6 thanks to this article by [Jay Sridhar](https://www.makeuseof.com/tag/es6-javascript-programmers-need-know/)
 
+- This article gave me ideas on what to include on the game: [Marketo Engage](https://nation.marketo.com/t5/product-discussions/creating-a-simple-quiz-using-forms-landing-pages/td-p/128438)
+
 - Learned about the arrow syntax in [w3schools](https://www.w3schools.com/js/js_arrow_function.asp), [sitepoint](https://www.sitepoint.com/es6-arrow-functions-new-fat-concise-syntax-javascript/), [javascript tutorial](https://www.javascripttutorial.net/es6/javascript-arrow-function/) & following this video by [the Coding train](https://www.youtube.com/watch?v=mrYMzpbFz18)
 
 - My code was highly influenced by these tutorials
   - By [James Q Quick tutorial](https://www.youtube.com/watch?v=u98ROZjBWy8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx)
   - [Pablo Monteserín](https://www.youtube.com/watch?v=OH8rPQlZ_CA)
   - [Re-On Media](https://www.youtube.com/watch?v=J-IVrJa_k2s) & [Re-On Media](https://www.youtube.com/watch?v=bkvLa8BI9zc)
+  - This article from [Webdevtrick](https://webdevtrick.com/create-javascript-quiz-program/)
 
-- Learned how to fetch from [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+- This article showed me how to be able to hide an element until it's called: [w3schools](https://www.w3schools.com/js/js_intro.asp)
+
+- Learned how to fetch from [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) and this [Stack Overflow post](https://stackoverflow.com/questions/56227336/how-to-handle-response-json-and-text-using-fetch)
+
+- This website helped me to understand key value pais a little better [Chris Pietschmann](https://pietschsoft.com/post/2015/09/05/javascript-basics-how-to-create-a-dictionary-with-keyvalue-pairs)
+
+- This questions in [Stack Overflow](https://stackoverflow.com/questions/56105542/how-to-fix-uncaught-typeerror-cannot-read-property-click-of-null) helped me notice the mistake I was making by adding all the js scripts in all the html pages
 
 - I found this very helpful: how to import json files 
   - [Amit Diwan](https://www.tutorialspoint.com/how-to-import-local-json-file-data-to-my-javascript-variable) 
@@ -461,7 +489,7 @@ This project has really put my research and understanding skills to the test, bu
 
 - Although at the end I decided not to include hard coded questions, I learned how to import the json file with the help of this article [Stefan Judis](https://www.stefanjudis.com/snippets/how-to-import-json-files-in-es-modules-node-js/)
 
-- Took the idea to include the Open Trivia API from [Benjamin Siegel](https://www.youtube.com/watch?v=SgJ_femmsfg&t=615s)
+- Took the idea to include this Open Trivia API from [Benjamin Siegel](https://www.youtube.com/watch?v=SgJ_femmsfg&t=615s)
 
 - Understood .splice thanks to [Ania Kubów](https://www.youtube.com/watch?v=E01cd5ZTQMU&list=RDCMUC5DNytAJ6_FISueUfzZCVsw&index=22)
 
@@ -483,6 +511,8 @@ This project has really put my research and understanding skills to the test, bu
 
 - Thank you to [Jon Tyson](https://unsplash.com/@jontyson) for the picture used on the homepage found in [unsplash](https://unsplash.com/)
 
+---
+
 ## ACKNOWLEDGEMENTS
 
 - To my mentor Rohit Sharma for all the time spent on giving me tips, advise, suggestions and sharing your great knowledge to make sure I did not panic when the project became very confused and I was lost.
@@ -491,7 +521,7 @@ This project has really put my research and understanding skills to the test, bu
 
 - To Sean from Student support for helping me write the path to fix issues in URL and differences in roots between gitpod and github. All pages are working as they should thanks to him!
 
-- To my partner for the time spend thorougly testing my game and being next to me on all those difficult times while creating this projects.
+- To my partner for the time spend thorougly testing my game, giving me advice and being next to me on all those difficult times while creating this projects. 
 
 ---
 
