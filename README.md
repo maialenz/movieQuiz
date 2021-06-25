@@ -374,8 +374,8 @@ The project was deployed using [GitHub Pages](https://pages.github.com/) using t
 
 5. The page will automatically refresh
 
-6. When the loading is finished, scroll back down to the GitHub pages section where you will find the deployed [link](https://maialenz.github.io/movieQuiz/) to the website.
-   ![Screenshot of the deployed link within GitHub pages](docs/deployment/githubdeployedlink.png)
+6. When the loading is finished, scroll back down to the GitHub pages section where you will find the deployed [link](https://https://maialenz.github.io/movieQuiz/) to the website.
+![Screenshot of the deployed link within GitHub pages](docs/deployment/githubdeployedlink.png)
 
 ---
 
