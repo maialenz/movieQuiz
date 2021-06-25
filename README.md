@@ -193,7 +193,7 @@ The fonts used for the site were taken from [Google Fonts](https://fonts.google.
 
 - I thought that any other images (end page and highscore page) where out of place, as the user would only want to see the important part: their score and end results.
 
-- Althought in the beginning I wanted to include an image for every question I created, as I decided to use an API instead of the hard coded questions, this wasn't a priority for this release, so I decided to leave this for future releases.
+- Althought in the beginning I wanted to include an image for every question I created, but as I decided to follow advice and use an API instead of the hard coded questions, this became second priority and I decided to leave the inclusion of images for future releases.
 
 ---
 ### **Logo**
