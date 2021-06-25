@@ -34,7 +34,8 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
 4. [DEVICE RESPONSIVENESS](#device-responsiveness)
 5. [BROWSER COMPATIBILITY](#browser-compatibility)
 6. [BUGS](#bugs)
-7. [BACK TO README.md](README.md)
+7. [KNOWN BUGS](#known-bugs)
+8. [BACK TO README.md](README.md)
 
 ## USER STORIES TESTING
 
@@ -54,7 +55,7 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
 
 - Be able to start the quiz by clicking a single button:
     - As the Game rules, the user can easily find the Start button at the bottom of the screen, just below the hero image. The text inside the button has been capitalized to catch the user's eye and the arrow icons make it more visible. The button glows in a darker color when hovered over.
-    ![screenshot of the start again button on the homepage](docs/testing/user-stories/start-quiz.png)
+    ![screenshot of the start again button on the homepage](docs/testing/user-stories/start-quiz-button.png)
 
     - If the user wants to retake the quiz once they have finished it without going back to the homepage, they can do it so by clicking over the Play again button. The button glows in a darker color when hovered over.
     ![screenshot of the play again button at the end of the quiz](docs/testing/user-stories/play-again-btn.png)
@@ -66,7 +67,7 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
     - The question will load automatically once the user has answered the question
     - The answer chosen by the user will turn on red if the anwer to the question is incorrect. If the answer is correct, the answer will turn on green.
     ![screenshot of a wrong answer](docs/testing/user-stories/incorrect.png)
-    ![screenshot of a correct asnwer](docs/testing/user-stories/corrects.png)
+    ![screenshot of a correct asnwer](docs/testing/user-stories/correct.png)
 
     - If the the loading of the fetched API questions take longer than usual, the user will be notified that the questions are loading with the representation of a loader
     ![screenshot of a wrong answer](docs/testing/user-stories/loader.png)
@@ -189,7 +190,7 @@ Due to the simplicity of the game, the results of the lighthouse testing have co
   - [End.html Lighthouse test:](docs/testing/lighthouse/lighthouse-end-desktop.png)
   - [Highscores.html Lighthouse test:](docs/testing/lighthouse/lighthouse-highscores-desktop.png)
 
---
+---
 
 ## DEVICE RESPONSIVENESS
 
@@ -204,9 +205,9 @@ Apart from that, I used an online app by [Media Genesis](https://responsivedesig
 
 Most phones share screen sizes so on those I did not see many changes. Saying that, on narrow screens (for example in the Galaxy Fold with a viewport of 286x653) some margins were too large. To fix these, I added some extra css to media queries for screens with max width 415, reducing margings to fit to screen better. 
 
-```
-(Code Editors do not allow to preview PDF files, so these will have to be seen directly in [Github](https://github.com/maialenz/movieQuiz/tree/master/docs/testing/device%2Bbrowser-tests). Saying that, the Github preview does not show the images with clarity as it enlarges them, so to see the results best, download these files and use Adobe pdf reader for best results.)
-```
+
+***(NOTE: Code Editors do not allow to preview PDF files, so these will have to be seen directly in [Github](https://github.com/maialenz/movieQuiz/tree/master/docs/testing/device%2Bbrowser-tests). Saying that, the Github preview does not show the images with clarity as it enlarges them, so to see the results best, download these files and use Adobe pdf reader for best results.)***
+
 
 ---
 
@@ -220,19 +221,19 @@ All the screenshots to my manual tests on various major devices are below:
 - Samsung Galaxy S8+ (My personal device) (mobile device): As mentioned before, I continuously tested my code on my own mobile device as I went writting and styling the code, so I could see how it looked on smaller screens. Thanks to testing on my phone I noticed the start button had to be made a little smaller it did not look oversized. Below there is screenshots of a last test done on this device:
 
     - [Samsung S8+ screenshot index](docs/testing/device+browser-tests/Samsungs8+screenshot-index.jpg)
-    - [Samsung S8+ screenshot game](docs/testing/device+browser-tests/samsungs8+screenshot-game.jpg)
-    - [Samsung S8+ screenshot end](docs/testing/device+browser-tests/samsungs8+screenshot-end.jpg)
+    - [Samsung S8+ screenshot game](docs/testing/device+browser-tests/Samsungs8+screenshot-game.jpg)
+    - [Samsung S8+ screenshot end](docs/testing/device+browser-tests/Samsungs8+screenshot-end.jpg)
     - [Samsung S8+ screenshot highscore](docs/testing/device+browser-tests/Samsungs8+screenshot-highscore.jpg)
-    - [Samsung S8+ screenshot of modal](docs/testing/device+browser-tests/samsungs8+screenshot-modal.jpg)
+    - [Samsung S8+ screenshot of modal](docs/testing/device+browser-tests/Samsungs8+screenshot-modal.jpg)
 
 
 - Samsung A70 (mobile device): I also tested the website on another mobile device:
 
-    - [Samsung A70 Screenshot index](docs/testing/device+browser-tests/SamsungA70-index.jpg)
-    - [Samsung A70 Screenshot game](docs/testing/device+browser-tests/SamsungA70-game.jpg)
-    - [Samsung A70 Screenshot highscore](docs/testing/device+browser-tests/SamsungA70-highscore.jpg)
-    - [Samsung A70 Screenshot end](docs/testing/device+browser-tests/SamsungA70-end.jpg)
-    - [Samsung A70 Screenshot modal](docs/testing/device+browser-tests/SamsungA70-modal.jpg)
+    - [Samsung A70 Screenshot index](docs/testing/device+browser-tests/SamsungA70-index.jpeg)
+    - [Samsung A70 Screenshot game](docs/testing/device+browser-tests/SamsungA70-game.jpeg)
+    - [Samsung A70 Screenshot highscore](docs/testing/device+browser-tests/SamsungA70-highscore.jpeg)
+    - [Samsung A70 Screenshot end](docs/testing/device+browser-tests/SamsungA70-end.jpeg)
+    - [Samsung A70 Screenshot modal](docs/testing/device+browser-tests/SamsungA70-modal.jpeg)
 
 - Samsung S5e (tablet)
 
@@ -306,7 +307,13 @@ All the screenshots to my manual tests on various major devices are below:
 
 ---
 
+
 ## FURTHER TESTING
+
+- All features have been thoroughtly tested by myself on different screen sizes/operating systems, including all internal links and buttons, hover effects, incorrect and correct responses, feedback page buttons, closing modal buttons, etc.
+
+- The live project has been tested by family and friends, acting as first time players, on their own devices of different makes and sizes to make sure everything was working as designed. They checked all features mentioned above. They adviced on the need of more variaty of questions. This made me to look into other ways to include more questions than the ones that I hard coded, and therefore made me try to find tutorials and articles on how to include an API and like this improve user experience
+
 ---
 
 ## BUGS
@@ -359,16 +366,13 @@ Listed are the biggest bugs that I encountered whilst building this project and 
         overflow-y: hidden;
         }
     }
-  ```
+    ```
 
-  8. As I tested the responsiness using the tool [Responsinator](http://www.responsinator.com/), I noticed that on small screens (specially Pixel2 and Iphone6/8) the answers' font were to big, so I included more rules into the css files to suit small viewports, specially screens with viewports below 415px.
+8. As I tested the responsiness using the tool [Responsinator](http://www.responsinator.com/), I noticed that on small screens (specially Pixel2 and Iphone6/8) the answers' font were to big, so I included more rules into the css files to suit small viewports, specially screens with viewports below 415px.
 
-  
-  
+ ## KNOWN BUGS
 
----
-
----
+ - I noticed that the image on the index page is not totally centered respective to the buttons on the "control box". Eventhough I try to fix this issue with DevTools, I did not find the right solution to target the right element and remove the extra margin from the left side of the image. I decided to leave it untouched on the first release as it is only more visible on very small screens.
 
 ---
 
