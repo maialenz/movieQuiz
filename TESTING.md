@@ -91,6 +91,7 @@ Once finished, I tested my site on a two different phones, laptop, tablet and de
 
 - Get a feedback with the total score and the option to retake the quiz or go to the main menu.
     - The user can see their total as they are answering the questions. At the end of the quiz, they will be shown the total points they received from the correct answers.
+    
     ![screenshot of the total score area](docs/testing/user-stories/total-score.png)
     - On the end page the user can decide if they want to retake the quiz again or they want to go back home. If the user clicks on Play again, the trivia will restart immediately. If the users clicks on Back Home, they will be taken back to the main page
     ![screenshot of the end control buttons](docs/testing/user-stories/end-controls.png)

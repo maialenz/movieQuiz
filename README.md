@@ -401,7 +401,7 @@ It is posible to copy and edit this project by any user without changing the rep
 
 1. Log in to [GitHub](https://github.com/join/get-started) and locate the [GitHub repository](https://github.com/maialenz/movieQuiz)
 
-   - You can also find it by seaching maialenz/movieQuiz on the [GitHub](https://github.com/) seach-bar.
+  - You can also find it by seaching maialenz/movieQuiz on the [GitHub](https://github.com/) seach-bar.
 
 2. Above the repository files and to the left of the green "GitPod" button, locate the "Code" or "download" button and click on it.
 ![screenshot of cloning code button](docs/deployment/clonecode.png)
@@ -411,8 +411,8 @@ It is posible to copy and edit this project by any user without changing the rep
 
 4. If you are working on a desktop application, follow the documentation found on number 5. For cloud based, open your own terminal in GitPod or your preferred IDE (we will be using Gitpod).
 
-    - For this project, we created a new workspace environment in GITPOD by using Code Institute's [Full Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template). To open it, just click on the Use this template button and all the necessary tools will be added to the work environment without the need of manually installing them. It takes a few minutes to load.
-    ![Screensot of the template button in GitHub](docs/deployment/gitpod-template-CI.png)
+  - For this project, we created a new workspace environment in GITPOD by using Code Institute's [Full Gitpod template](https://github.com/Code-Institute-Org/gitpod-full-template). To open it, just click on the Use this template button and all the necessary tools will be added to the work environment without the need of manually installing them. It takes a few minutes to load.
+  ![Screensot of the template button in GitHub](docs/deployment/gitpod-template-CI.png)
 
 5. If you use GitHub desktop follow the steps documented [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
 
