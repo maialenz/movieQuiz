@@ -297,13 +297,13 @@ All the screenshots to my manual tests on various major devices are below:
 
 - MacOs operating system tested on Safari browser: as I did not have any devices with MacOs operating system, I used [BrowserStack](https://www.browserstack.com/) to test the site on safari. Although is not as acurate as an Apple device, it helped me to see there was no issues in compatibility with a Safari browser.
 
-    - Safari (browswer)
+    - Safari (browser)
         
-        - [Safari index screenshot](docs/testing/device+browser-tests/MAC-emulator-index.jpeg)
-        - [Safari game screenshot](docs/testing/device+browser-tests/MAC-emulator-game.jpeg)
-        - [Safari highscore screenshot](docs/testing/device+browser-tests/MAC-emulator-highscore.jpeg)
-        - [Safari end screenshot](docs/testing/device+browser-tests/MAC-emulator-end.jpeg)
-        - [Safari modal screenshot](docs/testing/device+browser-tests/MAC-emulator-modal.jpeg)
+        - [Safari index screenshot](docs/testing/device+browser-tests/MAC-emulator-index.png)
+        - [Safari game screenshot](docs/testing/device+browser-tests/MAC-emulator-game.png)
+        - [Safari highscore screenshot](docs/testing/device+browser-tests/MAC-emulator-highscore.png)
+        - [Safari end screenshot](docs/testing/device+browser-tests/MAC-emulator-end.png)
+        - [Safari modal screenshot](docs/testing/device+browser-tests/MAC-emulator-modal.png)
 
 ---
 
