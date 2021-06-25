@@ -54,11 +54,11 @@ fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=mu
         startQuiz();
     })
     .catch((err) => {
-       errorMessage.innerHTML = `Oopss!! Sorry...It's not you, it's us... Please refresh the page and try again!`;
+        errorMessage.innerHTML = `Oopss!! Sorry...It's not you, it's us... Please refresh the page and try again!`;
         console.error(err);
     });
 
- /**
+/**
  * This function calls the function created on the promise and starts the game.
  * It resets the question counter to 0, in case it doesn't work automatically and it It sets the score to 0
  * It adds the class hidden to the loader div if the question is taking time loading so the user can see it.
@@ -152,4 +152,3 @@ incrementScore = num => {
     score += num;
     scoreText.innerHTML = score;
 };
-
